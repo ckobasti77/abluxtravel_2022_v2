@@ -1,0 +1,2067 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//mayaktours.rs/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://mayaktours.rs/package/hoteli-grcka/</loc>
+		<lastmod>2016-11-22T17:56:56+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/gr%C4%8Dka-hotel.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/paket-aranzmani-grcka-hotelavion/</loc>
+		<lastmod>2016-11-22T18:00:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/greece_plane.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/novogodisnji-vinski-bus-iznenadenja/</loc>
+		<lastmod>2017-12-20T13:20:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/%C5%A1ampanjac.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hoteli-bus-svaki-dan/</loc>
+		<lastmod>2018-01-15T16:18:34+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/autobusom1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-mediterranean-village/</loc>
+		<lastmod>2018-01-17T12:54:39+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/mediterranean-village-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-regina-mare/</loc>
+		<lastmod>2018-01-17T12:54:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/regina-mare-12.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-stefani/</loc>
+		<lastmod>2018-01-17T12:54:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/StefaniSarti-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartman-helena-argasi-avionom/</loc>
+		<lastmod>2018-01-17T12:55:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/19738_L.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-thalassies-nouveau/</loc>
+		<lastmod>2018-01-17T12:55:16+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/ThalassiesNoveau-10.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vassilia/</loc>
+		<lastmod>2018-01-17T12:55:26+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Vassilia-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartman-lake/</loc>
+		<lastmod>2018-01-17T12:56:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/App-Lake-9.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/mitsis-la-vita/</loc>
+		<lastmod>2018-01-17T12:56:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/548_L.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartman-paradise/</loc>
+		<lastmod>2018-01-17T12:56:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Paradise-Zakintos-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-kamari-beach/</loc>
+		<lastmod>2018-01-17T12:57:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/KamariBeach-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/marouso/</loc>
+		<lastmod>2018-01-17T12:57:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Marouso-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-royal-paradise-beach-resort-spa/</loc>
+		<lastmod>2018-01-17T12:57:39+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/RoyalParadiseTasos-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-eleana/</loc>
+		<lastmod>2018-01-17T12:57:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Eleana-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kresten-palace/</loc>
+		<lastmod>2018-01-17T12:57:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Kresten-Palace-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-ekaterini/</loc>
+		<lastmod>2018-01-17T12:58:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Ekaterine-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-diana-palace/</loc>
+		<lastmod>2018-01-17T12:58:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Diana-Palace-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pegasos-beach/</loc>
+		<lastmod>2018-01-17T12:58:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Pegasos-Beach-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-skiathos-palace-avionom/</loc>
+		<lastmod>2018-01-17T12:58:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Skiathos-Palace-12.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/astali/</loc>
+		<lastmod>2018-01-17T12:59:40+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Krit-Astali-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/niki/</loc>
+		<lastmod>2018-01-17T12:59:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Niki-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/neon/</loc>
+		<lastmod>2018-01-17T12:59:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Neon-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/golden-beach-crete/</loc>
+		<lastmod>2018-01-17T12:59:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Golden-Beach-Crete-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/joan/</loc>
+		<lastmod>2018-01-17T13:00:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/0_L.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-gouvia-%e2%98%85%e2%98%85/</loc>
+		<lastmod>2018-01-17T13:00:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/HotelGouvia-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-yannis/</loc>
+		<lastmod>2018-01-17T13:00:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/HotelYanis-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/omiros/</loc>
+		<lastmod>2018-01-17T13:01:01+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/30_L.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-city-marina/</loc>
+		<lastmod>2018-01-17T13:01:04+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/CityMarina-12.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-delfinia-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2018-01-17T13:01:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Delfinia-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartmani-athineos-krf/</loc>
+		<lastmod>2018-01-17T13:02:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/01/1317_L.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartman-alexandra-dassia/</loc>
+		<lastmod>2018-01-17T13:03:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Alexandra_Dassia1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartman-paradiso-ipsos/</loc>
+		<lastmod>2018-01-17T13:03:11+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Paradisso11.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/stefanie/</loc>
+		<lastmod>2018-01-17T13:04:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/07/2459_L.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/creta-maris/</loc>
+		<lastmod>2018-01-17T13:05:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Creta-Maris-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/stromboli/</loc>
+		<lastmod>2018-01-17T15:55:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Stromboli-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/san-leonardo/</loc>
+		<lastmod>2018-01-17T15:55:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/San-Leonardo-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-sciabache-%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2018-01-17T15:55:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Sciabache-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/terrasini/</loc>
+		<lastmod>2018-01-17T15:55:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Case-Vacanza-Terrasini-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/santa-lucia/</loc>
+		<lastmod>2018-01-17T15:55:56+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Santa-Lucia-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/fiesta-athenee/</loc>
+		<lastmod>2018-01-17T15:56:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Fiesta-Athenaee-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/saracen-sands/</loc>
+		<lastmod>2018-01-17T15:56:11+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Saracen-Sands-13.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-bon-repos-avionom/</loc>
+		<lastmod>2018-01-17T16:04:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/CostaBrava-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-caprici-verd/</loc>
+		<lastmod>2018-01-17T16:04:53+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Caprici-Verd-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-don-juan-lloret-avionom/</loc>
+		<lastmod>2018-01-17T16:04:56+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/DonJuan-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-internacional-avionom/</loc>
+		<lastmod>2018-01-17T16:05:01+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/InternacionalKalelja-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-sun-village-avionom/</loc>
+		<lastmod>2018-01-17T16:05:04+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/SunVillage-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-cala-font/</loc>
+		<lastmod>2018-01-17T16:05:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Cala-Font-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-estival-park/</loc>
+		<lastmod>2018-01-17T16:05:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Estival-Park-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/jaime-i/</loc>
+		<lastmod>2018-01-17T16:05:32+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Jaime-I-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/santa-monica-playa/</loc>
+		<lastmod>2018-01-17T16:05:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Monica-Playa-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-amic-gala-avionom/</loc>
+		<lastmod>2018-01-17T16:05:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Amic-gala-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/bellevue-vistanova/</loc>
+		<lastmod>2018-01-17T16:05:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Vistanova-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/reina-del-mar/</loc>
+		<lastmod>2018-01-17T16:05:45+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Reina-Del-Mar-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/sol-barbados/</loc>
+		<lastmod>2018-01-17T16:05:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Sol-Barbados-9.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-azak/</loc>
+		<lastmod>2018-01-17T17:12:34+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Azak-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/carter-rusija-2018-srbija-svajcarska/</loc>
+		<lastmod>2018-07-04T09:16:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/12/SVETSKO-PRVENSTVO-RUSIJA-THUMBNAIL.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/svetsko-prventsvo-rusija-2018-srbija-svajcarska/</loc>
+		<lastmod>2018-07-04T09:16:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/12/SVETSKO-PRVENSTVO-RUSIJA-THUMBNAIL.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/svetsko-prventsvo-rusija-2018-srbija-brazil/</loc>
+		<lastmod>2018-07-04T09:16:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/12/SVETSKO-PRVENSTVO-RUSIJA-THUMBNAIL.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/svetsko-prventsvo-rusija-2018-3-utakmice-srbije-u-grupi/</loc>
+		<lastmod>2018-07-04T09:17:04+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/12/SVETSKO-PRVENSTVO-RUSIJA-THUMBNAIL.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/svetsko-prventsvo-rusija-2018-polufinale-finale/</loc>
+		<lastmod>2018-07-14T10:59:32+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/12/SVETSKO-PRVENSTVO-RUSIJA-THUMBNAIL.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartman-kika/</loc>
+		<lastmod>2019-01-22T12:59:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Kika-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/magnolia/</loc>
+		<lastmod>2019-01-22T12:59:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Magnolia-17.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/loutsis/</loc>
+		<lastmod>2019-01-22T12:59:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Loutsis-9.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pariz-prvi-maj-uz-minhen-i-bec/</loc>
+		<lastmod>2019-07-31T09:36:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/02/6835595-paris-tourist-attractions.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kina-aranzman-leto/</loc>
+		<lastmod>2019-07-31T09:43:58+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/07/Kina-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/toskana-nova-godina-2/</loc>
+		<lastmod>2019-07-31T09:44:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/10/toskana-nova-godina-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/toskana-nova-godina/</loc>
+		<lastmod>2019-07-31T09:45:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/10/toskana-nova-godina-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/padova-gardaland-putovanje-2018/</loc>
+		<lastmod>2019-07-31T09:45:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/06/gardaland.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/new-york-putovanje/</loc>
+		<lastmod>2019-07-31T09:46:15+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/06/New-york-aran%C5%BEman-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/new-york-prvi-maj/</loc>
+		<lastmod>2019-07-31T10:02:39+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/06/New_York__Times_Square.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/napulj-prvi-maj-sorento-kapri/</loc>
+		<lastmod>2019-08-01T10:29:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/04/sicilija8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/gardaland-prvi-maj/</loc>
+		<lastmod>2019-08-01T10:29:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/06/gardaland.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/bavarska/</loc>
+		<lastmod>2019-08-01T10:29:17+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/10/bavarska7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/us-open-aranzman/</loc>
+		<lastmod>2019-08-01T10:37:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/07/Arthur_Ashe_Stadium_2010.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kina-prvi-maj/</loc>
+		<lastmod>2019-08-01T10:42:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/07/Kina-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/venecija-dan-zaljubljenih/</loc>
+		<lastmod>2019-08-01T10:42:11+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/09/venecija-putovanje.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/varsava-krakov/</loc>
+		<lastmod>2019-08-02T07:48:04+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/var%C5%A1ava-sirena.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/dvorci-bavarske-nova-godina/</loc>
+		<lastmod>2019-08-02T07:48:11+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/DvorciBavarske-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/bec-sretenje-bez-nocenja/</loc>
+		<lastmod>2019-08-02T07:53:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/06/vienna.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/oslo-avionom/</loc>
+		<lastmod>2019-08-02T07:58:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/03/Oslo-avionom-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/budva-nova-godina/</loc>
+		<lastmod>2019-08-02T07:58:21+00:00</lastmod>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/djenova-cinque-terre-1-maj/</loc>
+		<lastmod>2019-08-02T08:04:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/djenova-portofino-10.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/moskva-putovanje/</loc>
+		<lastmod>2019-08-02T08:07:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/moskva.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/atina-uskrs/</loc>
+		<lastmod>2019-08-02T08:07:53+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/atina-uskrs.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/san-marino/</loc>
+		<lastmod>2019-08-02T08:08:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/02/San.Marino.original.7001.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/milano-uskrs/</loc>
+		<lastmod>2019-08-02T08:09:17+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/05/Milano-jezera-19.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/toskana-uskrs-2-nocenja/</loc>
+		<lastmod>2019-08-02T08:09:30+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/01/Firenca-Usrks-putovanje.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pariz-minhen-bec/</loc>
+		<lastmod>2019-08-02T08:10:25+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/02/6835595-paris-tourist-attractions-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/rim-firenca-dan-primirja/</loc>
+		<lastmod>2019-08-02T08:10:56+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/08/firenca-toskana.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/barselona-1-maj/</loc>
+		<lastmod>2019-08-02T08:11:49+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/01/barcelona_02_big.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/bugarska-sofija-plovdiv-veliko-trnovo-rila/</loc>
+		<lastmod>2019-08-15T12:29:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2019/07/Sofia-.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/new-york-aranzman-jesen-avionom/</loc>
+		<lastmod>2019-10-07T12:32:41+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/06/New_York__Times_Square.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-jadranskim-ostrvima/</loc>
+		<lastmod>2019-10-13T18:18:53+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/01/Krstarenje.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/new-york-nova-godina-aranzman/</loc>
+		<lastmod>2019-10-13T18:21:04+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/06/New-york-aran%C5%BEman-11.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/beograd-voznja-gliserom-sava-dunav/</loc>
+		<lastmod>2019-10-13T18:22:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/07/DSC_1881.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/moskva-jesen/</loc>
+		<lastmod>2019-10-13T18:33:51+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/12/Moskva-uskrs-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kopaonik-ski-vikend/</loc>
+		<lastmod>2019-10-13T18:37:16+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/kopaonik-ski-staze1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://mayaktours.rs/home/wp-content/uploads/2016/11/kopaonik-ski-vikend-mapa.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/plitvicka-jezera-putovanje/</loc>
+		<lastmod>2019-10-13T18:42:06+00:00</lastmod>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nova-godina-sremski-karlovci/</loc>
+		<lastmod>2019-10-13T18:44:41+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/11/naslovna.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/prvi-maj-split-i-plitvicka-jezera/</loc>
+		<lastmod>2019-10-13T18:56:33+00:00</lastmod>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kotor-dan-zaljubljenih/</loc>
+		<lastmod>2019-10-13T18:59:14+00:00</lastmod>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/split-i-plitvicka-jezera-putovanje/</loc>
+		<lastmod>2019-10-13T19:00:50+00:00</lastmod>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/docek-nove-godine-u-andricgradu/</loc>
+		<lastmod>2019-10-23T16:18:11+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/kamengrad.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/osmi-mart-palic-morahalom-segedin/</loc>
+		<lastmod>2019-10-24T08:23:33+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2019/10/Segedin-Morahalom-Palic-Subotica-izlet-vikend-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/beogradska-mumija-bg-price/</loc>
+		<lastmod>2019-10-24T08:40:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/03/Bg-pri%C4%8De-18.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/atina-nova-godina-2/</loc>
+		<lastmod>2019-10-24T13:08:01+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2019/09/Atina-Ny.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-apartmani-natalia-studio/</loc>
+		<lastmod>2019-11-05T17:18:11+00:00</lastmod>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hanioti-apartmani-ramos-duplex/</loc>
+		<lastmod>2019-11-05T17:18:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2019/07/Ramos-Dublex-11.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-kuca-john-house/</loc>
+		<lastmod>2019-11-05T17:18:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2019/07/John-house-17.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/novogodisnji-aranzmani-preostala-mesta/</loc>
+		<lastmod>2019-11-05T17:29:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/11/deda.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/azurna-obala-letovanje-sanremo-nica-kan/</loc>
+		<lastmod>2019-11-05T17:29:20+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/07/Azurna-obala-letovanje-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/tasos-letovanje-vila-eirini/</loc>
+		<lastmod>2019-11-05T17:31:17+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2018/01/vila-Eirini-Tasos-letovanje-apartmani-Gr%C4%8Dka-12.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/letnji-kamp-nemackog-jezika-austrija/</loc>
+		<lastmod>2019-11-05T17:32:33+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/12/Nema%C4%8Dki.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/evia-letovanje-vila-meliti-pefki/</loc>
+		<lastmod>2019-11-05T17:32:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/Meliti-Evia-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/evia-letovanje-vila-akrotiri-pefki/</loc>
+		<lastmod>2019-11-05T17:32:45+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/AKROTIRI-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-letovanje-vila-karamavros/</loc>
+		<lastmod>2019-11-05T17:32:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/Karamavros1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-letovanje-vila-philoxenia-plaza/</loc>
+		<lastmod>2019-11-05T17:32:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/Philoxenia-Plaza-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-vrasna-letovanje-vila-temis/</loc>
+		<lastmod>2019-11-05T17:33:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/Temis-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/possidi-letovanje-possidi-holidays-%e2%98%85%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:34:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/1-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-al-mare-%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:35:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/18-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-letovanje-flegra-palace-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:35:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/1-1-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-letovanje-atrium-%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:35:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/1-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-letovanje-anna-maria-paradise-%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:35:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/1-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-anna-%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:35:53+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pefkohori-letovanje-alia-palace-%e2%98%85%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:35:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/03/14.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/paliouri-letovanje-kappa-resort/</loc>
+		<lastmod>2019-11-05T17:36:02+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/12-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/paliouri-letovanje-chrousso-village-%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/1-1-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-skioni-letovanje-xenios-anastasia-resort-spa-%e2%98%85%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/12-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-skioni-letovanje-imperial-%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:25+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/1-1-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-potidea-letovanje-portes-beach-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/1-9.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-potidea-letovanje-istion-club-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:36+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/4-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-kalikratia-secret-paradise-spa-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:41+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/1-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-kalikratia-letovanje-mallas-%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/19-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-kalikratia-letovanje-alkyonis-%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/17-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nea-kalikratia-letovanje-aegean-blue-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:36:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/1-1-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kriopigi-hotel-pashos-%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:37:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/10-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kriopigi-hotel-palladium-%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:37:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/24-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-kriopigi-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:37:16+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/8-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kriopigi-alkion-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:37:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/1-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kriopigi-alexander-great-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:38:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/1-1-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kalitea-theophano-imperial-palace-%e2%98%85%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:38:53+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/9-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kalitea-pallini-beach-%e2%98%85%e2%98%85%e2%98%85%e2%98%85/</loc>
+		<lastmod>2019-11-05T17:39:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/Pallini_beach-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kalitea-letovanje-macedonian-sun/</loc>
+		<lastmod>2019-11-05T17:39:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/3-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hanioti-hotel-tresor/</loc>
+		<lastmod>2019-11-05T17:39:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/tresor.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/tasos-letovanje-vila-vaso/</loc>
+		<lastmod>2019-11-05T17:40:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/12/VILA-VASO-POTOS-TASOS-GR%C4%8CKA-LETO-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/tasos-letovanje-vila-meresi/</loc>
+		<lastmod>2019-11-05T17:40:14+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/12/MERESI-LIMENAS-TASOS-LETO-GRCKA-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/svetsko-prventsvo-rusija-2018-srbija-kostarika/</loc>
+		<lastmod>2019-11-05T17:40:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/12/SVETSKO-PRVENSTVO-RUSIJA-THUMBNAIL.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/usrks-na-krfu/</loc>
+		<lastmod>2026-01-28T15:11:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/09/uskrs-na-krfu-proslava.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenja-velika-akcija-96h-promo-do-27-04/</loc>
+		<lastmod>2026-02-11T13:41:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/04/msc-world-europa-mayak-tours-krstarenja-31.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/izlet-segedin/</loc>
+		<lastmod>2026-02-13T09:53:55+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/01/segedin-banja-ana-mayak-tours-izlet-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/ohrid-vikend/</loc>
+		<lastmod>2026-02-13T09:55:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/03/ohrid-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/emilija-romanja-san-marino-5-dana-autobusom/</loc>
+		<lastmod>2026-02-13T10:08:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/san-marino.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/sicilija-letovanje-autobusom/</loc>
+		<lastmod>2026-02-13T10:08:19+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/02/sicilija-mayak-tours-letovanje-14-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/milano-2-nocenja/</loc>
+		<lastmod>2026-02-13T10:08:30+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/05/Milano-jezera-20.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/budimpesta/</loc>
+		<lastmod>2026-02-13T10:08:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/02/257379244_3057287621212037_7124487421072025131_n.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/venecija-verona-1-nocenje/</loc>
+		<lastmod>2026-02-18T11:01:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/venecija-romanticna_174886163-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/izlet-palic-ergela-kelebija-i-subotica-2/</loc>
+		<lastmod>2026-03-09T17:27:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/01/Ergela-Kelebija-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-joce-2-ohrid-letovanje-2023/</loc>
+		<lastmod>2026-03-10T11:10:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/vila-joce-ohrid-2-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-joce-ohrid-letovanje/</loc>
+		<lastmod>2026-03-10T11:11:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/05/vila-joce-ohrid-4-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-sileks-4-ohrid-letovanje/</loc>
+		<lastmod>2026-03-10T11:12:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/03/hotel-sileks-ohrid-9.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-metropol-4-ohrid-letovanje/</loc>
+		<lastmod>2026-03-10T11:12:14+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/03/hotel-metropol-ohrid-11.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-belvi-4-ohrid-letovanje/</loc>
+		<lastmod>2026-03-10T11:12:25+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/03/hotel-belvi-ohrid-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-belvedere-4-ohrid-letovanje/</loc>
+		<lastmod>2026-03-10T11:12:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/03/HOTEL-BELVEDERE-OHRID-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-chingo-3-ohrid-letovanje/</loc>
+		<lastmod>2026-03-10T11:12:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/03/hotel-chingo-ohrid-27.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/provansa-prvi-maj/</loc>
+		<lastmod>2026-03-10T11:33:32+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/02/provence-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/pula-i-brioni/</loc>
+		<lastmod>2026-03-10T11:33:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/Pula-avion-slobodno-kori%C5%A1%C4%87enje-01.11.2014..jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kapadokija-putovanje-istanbul-ankara/</loc>
+		<lastmod>2026-03-10T11:34:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/10/kapadokija-1.jpeg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/ski-vikend-u-sjenici/</loc>
+		<lastmod>2026-03-10T12:25:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/05/hotel-borovi-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kombi-stanisici-banja-dvorovi/</loc>
+		<lastmod>2026-03-10T12:25:45+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/01/Stanisici-jezero.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/klub-satelit-zlatibor/</loc>
+		<lastmod>2026-03-10T12:25:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/11/1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kombi-uvac-i-zlatibor-2-nocenja/</loc>
+		<lastmod>2026-03-10T12:25:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/07/uvac-kanjon-molitva-11-09-2008-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kombi-subotica-palic-i-segedin-2-nocenja/</loc>
+		<lastmod>2026-03-10T12:25:53+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/05/Subotica-Rahlova-palata-001.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kombi-tragom-srpskih-vampira/</loc>
+		<lastmod>2026-03-10T12:25:55+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/12/tragom-srpskih-vampira-izlet-april-2016-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kombi-resavska-pecina-manasija-i-vodopad-veliki-buk/</loc>
+		<lastmod>2026-03-10T12:25:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/01/resavska.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kombi-podzemni-novi-sad/</loc>
+		<lastmod>2026-03-10T12:26:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/07/Podzemni-NS-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kopaonik-kombi-vip/</loc>
+		<lastmod>2026-03-10T12:26:04+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/07/%C4%90avolja-varo%C5%A1-i-Kopaonik-vikend-putovanje-jul-2017-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/derdapska-klisura-kombijem-vip/</loc>
+		<lastmod>2026-03-10T12:26:06+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/07/golubac48dka-tvrc491ava1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/uvac-kombi-vip/</loc>
+		<lastmod>2026-03-10T12:26:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/12/Uvac-vikend-putovanje-avgust-Sber-2016-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-mediteranom-iz-denove-brod-msc-seaview/</loc>
+		<lastmod>2026-03-13T16:27:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/msc-seaview-krstarenja-mediteranom-mayak-tours-5-scaled.webp</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-zapadnim-mediteranom-msc-seaside-7-nocenja/</loc>
+		<lastmod>2026-03-13T16:38:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/12/mscseaside-1.webp</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-zapadnim-mediteranom-msc-fantasia-7-nocenja/</loc>
+		<lastmod>2026-03-16T13:37:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/09/msc-fantasia-19.webp</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-arapske-metropole-msc-euribia-7-nocenja/</loc>
+		<lastmod>2026-03-16T13:44:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/01/msc-euribia-krstarenje-mayak-tours-2.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-istocnim-mediteranom-msc-opera-7-nocenja/</loc>
+		<lastmod>2026-03-16T13:57:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/msc-opera-mayak-torus-10.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-zapadnim-mediteranom-msc-world-europa-7-nocenja/</loc>
+		<lastmod>2026-03-17T12:04:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/msc-world-europa-mayak-tours-krstarenja-32.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/madarska-bajka-tragovima-arhitekture-vina-umetnosti-ljubavi-pecuj-2-nocenja/</loc>
+		<lastmod>2026-03-17T12:06:26+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/08/madjarska-heviz-pecuj-balaton-9.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-istocnim-mediteranom-msc-splendida-10-dana-9-nocenja/</loc>
+		<lastmod>2026-03-17T12:24:20+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/msc-splendida-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-istocnim-mediteranom-msc-musica-7-nocenja-2/</loc>
+		<lastmod>2026-03-17T13:26:58+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/msc-musica-mayak-tours-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-karibima-msc-world-america-7-ili-14-nocenja/</loc>
+		<lastmod>2026-03-17T13:28:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/10/msc-world-america-mayak-tours-1.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-arapski-zaliv-9-dana-7-nocenja-polazak-iz-beograda-avion-brod/</loc>
+		<lastmod>2026-03-17T13:32:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/01/msc-euribia-krstarenje-mayak-tours-2.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-zapadnim-meditaranom-msc-lirica-7-nocenja/</loc>
+		<lastmod>2026-03-17T14:23:51+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/11/msc-lirica-krstarenje-mayak-1.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-mediteranom-iz-denove-brod-msc-grandiosa/</loc>
+		<lastmod>2026-03-17T14:33:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/10/brod-msc-grandiosa-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-istocnim-mediteranom-msc-sinfonia-7-nocenja/</loc>
+		<lastmod>2026-03-17T14:58:15+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/MSC-SINFONIA-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-istocnim-mediteranom-msc-musica-7-nocenja/</loc>
+		<lastmod>2026-03-17T15:08:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/msc-musica-mayak-tours-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-zapadni-mediteran-portugal-msc-orchestra-10-nocenja/</loc>
+		<lastmod>2026-03-17T15:18:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/02/mayakmscorchestra-8.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/francuska-nemacka-iz-bajki-kolmar-5-dana-autobusom/</loc>
+		<lastmod>2026-03-19T12:36:30+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/01/kolmar-strazbur-friburg-2-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-zapadnim-mediteranom-costa-smeralda-7-nocenja/</loc>
+		<lastmod>2026-03-19T13:39:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/10/costa-smeralda-krstarenje-mayak-tours-2.webp</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/prag-autobusom/</loc>
+		<lastmod>2026-03-30T11:05:45+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/05/prag-nova-godina_763670743-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/toskana-rim-napulj/</loc>
+		<lastmod>2026-04-14T16:40:16+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/rim-italija-mayak-3-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kosta-blanka-alikante-4-dana-avionom/</loc>
+		<lastmod>2026-04-21T13:49:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/01/alikante-mayak-tours-4-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-adamas-3-dasija-hit-ponuda/</loc>
+		<lastmod>2026-04-22T11:45:20+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/02/hotel-adamas-dassia-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/istanbul-3-nocenja/</loc>
+		<lastmod>2026-04-28T12:28:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/01/istanbul_1499481290-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-mediteranom-iz-djenove/</loc>
+		<lastmod>2026-04-28T12:28:30+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/msc-world-europa-mayak-tours-krstarenja-32.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apulija-leto-2025-monte-gargano-putovanje-kroz-maslinike-suvozide-i-tirkizne-zalive-7-nocenja-autobusom/</loc>
+		<lastmod>2026-04-28T12:29:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/juzna-italija-mayak-7-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/prolece-na-suncanom-jadranu/</loc>
+		<lastmod>2026-05-04T12:24:58+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/BUDVA-2-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-poseidonio-polihrono/</loc>
+		<lastmod>2026-05-04T13:49:17+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/Poseidoniomayak-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/andaluzija-valensija-sevilja-malaga/</loc>
+		<lastmod>2026-06-11T12:32:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/02/andaluzija.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apart-hotel-paraktio-nea-kalikratia/</loc>
+		<lastmod>2026-06-29T15:11:02+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/05/apart-hotel-paraktio-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apartmani-pod-lozom-petrovac/</loc>
+		<lastmod>2026-07-14T12:55:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/06/apartmani-pod-lozom-petrovac-1-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-lemoni-mezonete-nea-skioni/</loc>
+		<lastmod>2026-07-17T17:41:36+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/L.-Mezonete-1-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-vesko-rafailovici/</loc>
+		<lastmod>2026-07-21T11:58:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/01/vila-vesko-rafailovici-11-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-fassas-polihrono/</loc>
+		<lastmod>2026-07-29T11:08:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/FASSAS-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-sofia-polihrono/</loc>
+		<lastmod>2026-07-29T11:08:55+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/stella-9-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-palma-1-polihrono/</loc>
+		<lastmod>2026-07-29T11:09:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/20220205_132145.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-katarina-polihrono/</loc>
+		<lastmod>2026-07-29T11:09:20+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/Katarina-Mayak-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-zoi-polihrono/</loc>
+		<lastmod>2026-07-29T11:09:40+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/ZoiMayak-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-palma-2-polihrono/</loc>
+		<lastmod>2026-07-29T11:09:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/20220205_131654-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-penelopi-1-polihrono/</loc>
+		<lastmod>2026-07-29T11:09:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/8-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-lemoni-studios-nea-skioni/</loc>
+		<lastmod>2026-07-29T11:12:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/lemoni-studios-nea-skioni-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-korali-2-sutomore/</loc>
+		<lastmod>2026-08-05T13:11:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/02/hotel-korali-sutomore-mayak-tours-4.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-rodolfos-inn-limenarija/</loc>
+		<lastmod>2026-08-10T12:01:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/10/vila-rodolfos-tasos-letovanje-mayak-tours-36.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-atina-3-asprovalta/</loc>
+		<lastmod>2026-08-13T11:08:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/04/hotel-atina-asprovalta-21-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-atlantis-3-paralija-hit-ponuda/</loc>
+		<lastmod>2026-08-19T13:24:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/hotel-atlantis-paralija-10-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krf-letovanje-dimitris-dassia/</loc>
+		<lastmod>2026-08-19T14:05:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/02/Dimitris-001.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-karatasos-12-polihrono/</loc>
+		<lastmod>2026-08-20T12:06:26+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/02/KARATASOS-1-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krf-apartmani-vila-lola-dasija/</loc>
+		<lastmod>2026-08-24T11:34:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/01/lola_1m.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-filiko-amuljani/</loc>
+		<lastmod>2026-08-24T11:42:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/02/filiko-mayak-aamuljani.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-athineon-pefki/</loc>
+		<lastmod>2026-08-24T11:59:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/vila-athineon-pefki-evia-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-anemos-pefki/</loc>
+		<lastmod>2026-08-24T12:06:32+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/vila-anemos-pefki-evia-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-bellagio-3-skala-furka-hit-ponuda/</loc>
+		<lastmod>2026-08-24T12:09:06+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/01/hotel-bellagio-skala-furka-1.png</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-galanis-golden-beach/</loc>
+		<lastmod>2026-08-24T12:12:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/12/vila-galanis-tasos-6.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-agyra-limenarija/</loc>
+		<lastmod>2026-08-24T12:14:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/12/vila-agyra-tasos-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-renaissance-skala-potamia/</loc>
+		<lastmod>2026-08-24T12:17:49+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/11/mayak-tours-vila-renaissance-tasos-letovanje-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-vana-studios-limenas/</loc>
+		<lastmod>2026-08-24T12:20:24+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/vana-studios-tasos-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-maria-panagiota-potos/</loc>
+		<lastmod>2026-08-24T12:21:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/maria-panagiota-tasos-8.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-maria-panagiota-2-potos/</loc>
+		<lastmod>2026-08-24T12:38:16+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/06/maria-panagiota-2-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-vn-studios-limenas/</loc>
+		<lastmod>2026-08-24T12:40:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/10/vila-vn-studios-tasos-mayak-tours-letovanje-27-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-potidea-blue-nea-potidea/</loc>
+		<lastmod>2026-08-24T12:40:26+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/06/potidea-blue-nea-potidea-1-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-eden-afitos/</loc>
+		<lastmod>2026-08-24T12:49:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/12/vila-eden-afitos-mayak-5.jpeg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-nikos-afitos-novo/</loc>
+		<lastmod>2026-08-24T12:51:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/12/NIKOS-AFITOS-NASLOVNA-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-fani-kalitea/</loc>
+		<lastmod>2026-08-24T12:53:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/02/vila-fani-kalitea-mayak-tours-11-1-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/apart-hotel-oceanis-kalitea/</loc>
+		<lastmod>2026-08-24T13:23:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/11/hotel-oceanis-kalitea-mayak-tours-13.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-mistral-kalitea/</loc>
+		<lastmod>2026-08-24T13:31:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/11/vila-mistral-kalitea-mayak-tours-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-emmenidis-kalitea/</loc>
+		<lastmod>2026-08-24T13:34:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/11/vila-emmenidis-kalitea-mayak-tours-2-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kalitea-letovanje-vila-dina/</loc>
+		<lastmod>2026-08-24T13:36:40+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/01/dina_1m.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-ikonomu-studios-pefkohori/</loc>
+		<lastmod>2026-08-24T13:38:25+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/vila-ikonomu-pefkohori-mayak-tours-3-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-kehagias-siviri/</loc>
+		<lastmod>2026-08-24T13:42:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/03/Kehagiasmayak-23.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/siviri-letovanje-vila-kasandros/</loc>
+		<lastmod>2026-08-24T13:44:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/04/vila-kasandros-siviri-10-1-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/siviri-letovanje-alexandros/</loc>
+		<lastmod>2026-08-24T13:50:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2016/02/Alexandros-001.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-fotis-2-skala-furka/</loc>
+		<lastmod>2026-08-24T13:57:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/04/IMG_20200619_121545-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/skala-furka-letovanje-vila-fotis/</loc>
+		<lastmod>2026-08-24T13:59:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/01/fotis_1m.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/skala-furka-letovanje-vila-marios/</loc>
+		<lastmod>2026-08-24T14:20:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2017/01/Marios-001.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/posidi-studios-posidi/</loc>
+		<lastmod>2026-08-24T14:21:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/05/posidi-pet-friendly.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-mesidrili-mola-kaliva/</loc>
+		<lastmod>2026-08-24T14:23:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/11/vila-mesidrili-kasandra-mayak-tours-3-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-coralli-lutra/</loc>
+		<lastmod>2026-08-24T14:34:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/coralli-lutra.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/stavros-apart-hotel-antonico/</loc>
+		<lastmod>2026-08-24T14:36:01+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/04/apart-hotel-antonico-stavros-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-holiday-house-nea-vrasna/</loc>
+		<lastmod>2026-08-24T14:46:55+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/03/vila-holiday-house-nea-vrasna-13-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/skala-furka-vila-aristides/</loc>
+		<lastmod>2026-08-25T13:34:39+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/01/Vila-Aristides-Skala-furka-10-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-terra-solle-ipsos-novo-u-ponudi/</loc>
+		<lastmod>2026-08-25T14:07:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/12/TERRA-E-SOLE-MAYAK-TOURS-KRF-9-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/uvac-izlet-vikend-putovanje/</loc>
+		<lastmod>2026-08-26T11:51:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/09/zlatibor-uvac-panorama-489618988-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-ammou-lux-ex-filiko-2-amuljani/</loc>
+		<lastmod>2026-08-26T11:58:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/06/ammou-lux-vila-amuljani-2-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/40936/</loc>
+		<lastmod>2026-08-26T14:15:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/12/vila-celestial-spa-55-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-chrouso-apartments-paljuri/</loc>
+		<lastmod>2026-08-26T16:51:39+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/03/vila-chrouso-mayak-tours-35.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-paradiso-jerisos/</loc>
+		<lastmod>2026-08-28T11:36:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/10/vila-paradiso-jerisos-mayak-tours-22-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/vila-electra-beach-paralija/</loc>
+		<lastmod>2026-08-28T13:41:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/11/ElektraBeachParalia-mayak.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/23127/</loc>
+		<lastmod>2026-08-28T13:41:34+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/06/vila-odiseas-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/paralia-letovanje-vila-violet/</loc>
+		<lastmod>2026-09-01T12:09:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/01/violet_1m.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-alexandra-beach-4-potos-tasos-hit-ponuda/</loc>
+		<lastmod>2026-09-02T11:44:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/03/alexandra-beach-hotel-tasos-potos-mayak-tours-24.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-celestial-blue-lutra-hit-ponuda/</loc>
+		<lastmod>2026-09-02T11:49:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/10/hotel-celestial-blue-lutra-mayak-tours-16-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-arya-hanioti/</loc>
+		<lastmod>2026-09-02T11:49:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/06/hotel-arya-novee-14.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-olympic-kosma-3-hanioti/</loc>
+		<lastmod>2026-09-02T11:51:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/11/hotel-olympic-kosma-hanioti-mayak-tours-4-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/magija-veneta-carobni-dolomiti-2-nocenja-autobusom/</loc>
+		<lastmod>2026-09-07T09:52:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/06/dolomiti-1.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/jesem-pod-suncem-toskane-3-nocenja/</loc>
+		<lastmod>2026-09-08T13:57:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/03/Toskana_1183142221-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/rajacke-pimnice-krstarenje-djerdapom/</loc>
+		<lastmod>2026-09-08T13:59:06+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2020/04/Slider-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-prvomajski-mediteran-msc-splendida-8-dana-6-nocenja-polazak-iz-beograda-avion-bus-brod-hotel/</loc>
+		<lastmod>2026-09-11T12:20:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/08/msc-splendida-07.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/atina-nova-godina/</loc>
+		<lastmod>2026-09-11T13:05:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/10/atina-00-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-philoxenia-boutique-pefkohori/</loc>
+		<lastmod>2026-09-15T11:46:33+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/11/philoxenia-boutique-pefkohori-mayak-tours-2.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/lutra-letovanje-aleksiadis/</loc>
+		<lastmod>2026-09-15T11:48:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2021/12/alexiadis-lutra-NASLOVNA-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/hotel-tropical-4-hanioti-hit-ponuda/</loc>
+		<lastmod>2026-09-15T11:56:51+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/06/hotel-tropical-hanioti-mayak-tours-36-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/ljoret-de-mar-spanija-letovanje/</loc>
+		<lastmod>2026-09-16T12:13:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/05/ljoret-de-mar-04.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/nestvarna-priroda-balkana-bihac-slapovi-une-plitvicka-jezera-2-nocenja-autobusom/</loc>
+		<lastmod>2026-09-21T10:39:58+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/11/nacionalni-park-una-mayak-5.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/napulj-sa-izletima-na-amalfi-obali-3-nocenja-autobusom/</loc>
+		<lastmod>2026-09-21T12:19:41+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/08/napulj-amalfi-mayak-tours-3.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/bergamo-panoramski-voz-bernina-express/</loc>
+		<lastmod>2026-09-21T12:20:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/01/torino-bernina-express-alpi-jerezo-orta-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/juzna-italija-apulija-rimini-6-dana-autobusom/</loc>
+		<lastmod>2026-09-21T12:40:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/08/juzna-italija-mayak-4-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/poljska-venecija-grad-patuljaka-vroclav-2-nocenja-autobusom/</loc>
+		<lastmod>2026-09-21T12:42:01+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/08/voclav-mayak-tours-4.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/banje-madarske-2-nocenja-autobusom/</loc>
+		<lastmod>2026-09-21T13:00:01+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/11/KISKUNMAJSA-1.jpeg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/advent-u-temisvaru-1-nocenje-autobusom/</loc>
+		<lastmod>2026-09-21T13:00:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2024/10/temisvar-mayak-tours-2-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/bec-soping-parndorf/</loc>
+		<lastmod>2026-09-21T13:01:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/05/bozicni-market-par_523654906-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-zapadni-mediteran-taragona-i-valensija-msc-magnifica-7nocenja/</loc>
+		<lastmod>2026-09-21T13:01:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/03/MSCMagnifica-mayak-13.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/kruna-karpata-od-transfagarasana-do-kraljevskih-dvoraca-ekspedicija-u-rumuniju/</loc>
+		<lastmod>2026-09-21T13:07:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/05/krajova.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/all-inclusive-krstarenje-tri-kontinenta-celestyal-crystal-8-dana-7-noci/</loc>
+		<lastmod>2026-09-24T16:08:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/10/izlet-u-kairo-7670.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/krstarenje-mediteranom-iz-atine-avionom/</loc>
+		<lastmod>2026-09-25T13:25:28+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2023/03/MSC-SINFONIA-7.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/mostar-trebinje-dubrovnik-visegrad/</loc>
+		<lastmod>2026-09-30T13:27:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2026/04/sarajevo_1045878367-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/malta-ostrvo-vitezova-istorije-4-dana-avionom/</loc>
+		<lastmod>2026-09-30T13:29:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2025/08/malta-juanita-florecita-slike-23.jpg</image:loc>
+		</image:image>
+	</url>
+<url>
+		<loc>https://mayaktours.rs/package/azurna-obala-sanremo-mini-odmor/</loc>
+		<lastmod>2026-09-30T13:31:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://mayaktours.rs/wp-content/uploads/2022/12/azurna-obala-shutterstock_185168879-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+</urlset>

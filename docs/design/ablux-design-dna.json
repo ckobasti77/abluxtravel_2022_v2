@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "name": "ABLux — Putni dnevnik (Editorial Voyage)",
+    "description": "Warm editorial travel-journal world extracted from the approved local homepage (hero to closing section) and the GPT design comps in public/generated/concepts; extended to the whole public site (Papir light theme + Tinta dark theme) and to the admin (operate mode).",
+    "source_references": [
+      "app/page.tsx, components/home-hero.tsx, components/ablux-home-motion.tsx, app/styles/home.css (.ablux-* classes, 2026-09; formerly app/globals.css)",
+      "public/generated/concepts/desktop-routes.png, desktop-proof-process.png, desktop-vehicles-cta.png and mobile variants",
+      "public/generated/ablux-hero-reference-desktop.png, ablux-hero-ostrog-desktop.png",
+      "design/reference/home_desktop_slice0*.png (screenshots of the approved homepage)"
+    ],
+    "created_at": "2026-09-30"
+  },
+  "design_system": {
+    "color": {
+      "palette_type": "warm neutrals with split-complementary accents (gold vs teal and brick)",
+      "primary": { "hex": "#06151A", "role": "Mastilo (ink): hero and feature grounds, dark theme ground, primary text, admin sidebar" },
+      "secondary": { "hex": "#F8F4EA", "role": "Papir (paper): page ground, light surfaces" },
+      "accent": { "hex": "#D5A54F", "role": "Zlato (gold, gradient to #B99146): primary CTA fill with ink text, italic emphasis word, stamps, active indicators" },
+      "neutral": {
+        "scale": ["#FBF9F4", "#F8F4EA", "#EFE8DA", "#E2D9C6", "#C9BFA9", "#9A9384", "#5C6662", "#3B4643", "#0A2428", "#06151A"],
+        "usage": "paper steps for grounds and bands; #5C6662 for secondary text on #F8F4EA (5.4:1) and #EFE8DA (4.9:1); #0A2428 for dark cards; #06151A for text and ink grounds"
+      },
+      "semantic": {
+        "success": "#0E7C7B (teal; on ink use #5FB8B4)",
+        "warning": "#C28A2C (ochre, only as a chip background with ink text)",
+        "error": "#9B3A2E (brick; on ink use #E08B7E)",
+        "info": "#296266 (deep teal; on ink use #9CCFD0)"
+      },
+      "surface": {
+        "background": "#F8F4EA (Papir) / #06151A (Tinta)",
+        "card": "#FDFAF3 with 1px rgba(6,21,26,.12) / #0A2428 with 1px rgba(215,226,223,.14)",
+        "elevated": "#FFFFFF with warm shadow / #10302F"
+      },
+      "contrast_strategy": "dark-on-light dominant; hero and feature panels invert to ink with paper text; gold only as filled buttons (ink text 8.2:1), large display italics, or #7D5E27 for small gold text on paper (5.5:1); no gold text smaller than 24px on paper"
+    },
+    "typography": {
+      "type_scale": {
+        "display": { "size": "clamp(3rem, 6.2vw, 5.75rem)", "weight": "500", "line_height": "1.02", "tracking": "-0.01em" },
+        "heading_1": { "size": "clamp(2.5rem, 4.6vw, 4rem)", "weight": "500", "line_height": "1.04", "tracking": "-0.005em" },
+        "heading_2": { "size": "clamp(2rem, 3.4vw, 3rem)", "weight": "500", "line_height": "1.06", "tracking": "0" },
+        "heading_3": { "size": "1.125rem-1.25rem (Manrope)", "weight": "700", "line_height": "1.3", "tracking": "-0.01em" },
+        "body": { "size": "1rem-1.0625rem", "weight": "400-500", "line_height": "1.65", "tracking": "0" },
+        "body_small": { "size": "0.875rem", "weight": "400", "line_height": "1.55", "tracking": "0" },
+        "caption": { "size": "0.8125rem", "weight": "500", "line_height": "1.4", "tracking": "0.01em" },
+        "overline": { "size": "0.72rem", "weight": "700", "line_height": "1.2", "tracking": "0.22em (uppercase, teal or #7D5E27)" }
+      },
+      "font_families": {
+        "heading": "EB Garamond (display serif, italic gold emphasis word). Replaced Cormorant Garamond in step 04: Cormorant draws detached floating carons on lowercase č ž š at weights 400-600. Line-height >= 1.1 with caron padding",
+        "body": "Manrope (UI and body; tabular-nums for prices, dates, counts)",
+        "mono": "none — ticket codes use Manrope 800 uppercase with 0.12em tracking"
+      },
+      "font_style_notes": "high-contrast old-style display serif against a humanist-geometric sans; Sora is removed; admin uses Manrope only (serif only in the logo wordmark)"
+    },
+    "spacing": {
+      "base_unit": "4px",
+      "scale": ["4", "8", "12", "16", "24", "32", "48", "64", "96", "128"],
+      "content_density": "comfortable (public), compact-calm (admin)",
+      "section_rhythm": "96-128px between sections on desktop, 64-72px on mobile; more space above a heading than below; one dense section is followed by a quiet one"
+    },
+    "layout": {
+      "grid_system": "12-column grid, asymmetric editorial compositions (e.g. 1 feature card at 44% + a 2x2 grid)",
+      "max_content_width": "90rem (1440px) with 16px mobile / 32px desktop gutters",
+      "columns": "12 desktop, 6 tablet, 1 mobile",
+      "gutter": "16-24px",
+      "breakpoints": ["390px", "768px", "1024px", "1280px", "1440px"],
+      "alignment_tendency": "mixed: left-aligned section heads and cards, centered process and closing sections"
+    },
+    "shape": {
+      "border_radius": { "small": "6px", "medium": "10px", "large": "16px", "pill": "999px" },
+      "border_usage": "subtle 1px rgba(6,21,26,.12-.16); ticket notches (cut corners via mask) and perforation edges; dashed route lines",
+      "divider_style": "1px hairlines in paper-2 tones; dashed gold/brick route lines between related elements"
+    },
+    "elevation": {
+      "shadow_style": "soft diffused, warm-tinted (ink at low alpha), never glowing",
+      "levels": {
+        "low": "0 1px 2px rgba(6,21,26,.06)",
+        "medium": "0 12px 32px -12px rgba(6,21,26,.18)",
+        "high": "0 28px 60px -20px rgba(6,21,26,.35)"
+      },
+      "depth_cues": "overlapping paper layers, the paper band under the hero, texture, ink/paper inversion"
+    },
+    "iconography": {
+      "style": "fine engraved line glyphs (custom SVG like the ticket glyphs) for brand moments; one UI icon set with consistent 1.5px stroke for the rest (lucide only; react-icons removed in step 15)",
+      "stroke_weight": "1.5px",
+      "size_scale": ["16", "20", "24", "32"],
+      "preferred_set": "custom SVG glyphs + lucide-react (already installed) at strokeWidth 1.5"
+    },
+    "motion": {
+      "easing": "power3.out / cubic-bezier(0.22, 1, 0.36, 1)",
+      "duration_scale": { "micro": "180ms", "normal": "420ms", "macro": "900-1200ms" },
+      "entrance_pattern": "fade-up 24-46px with blur(8px) to 0, stagger 70-90ms, triggered at 82-96% viewport",
+      "exit_pattern": "fade only",
+      "philosophy": "cinematic-calm: slow reveals, one signature scroll moment (hero becomes a postcard), route lines drawing on scroll, no bounce, no scroll hijacking elsewhere; prefers-reduced-motion disables all of it"
+    },
+    "components": {
+      "button_style": "primary: gold gradient fill #D5A54F→#B99146, ink text, radius 10px, soft gold shadow, :active translateY(1px); ghost on ink: 1px paper/40%; secondary on paper: paper fill + 1px ink/16%; text link with arrow",
+      "input_style": "label above (overline style), paper field #FDFAF3, 1px ink/16%, radius 10px, 2px gold focus ring with offset; on ink: #0A2428 fields with paper text (booking bar)",
+      "card_style": "ticket (notched corners, perforation divider, stamp block with route code), postcard (photo with white deckled border + stamp), route card (photo with ink gradient + brass number plate)",
+      "navigation_pattern": "transparent over the hero, then paper (light) / ink (dark) at 82% with 12px blur; serif wordmark; mega menu for Ponude by category; sticky search pill 'Kuda putujete?' after the hero",
+      "modal_style": "paper sheet, radius 16px, ink overlay 60%; bottom sheets on mobile",
+      "list_style": "tables with 1px hairlines, zebra paper-2, tabular numerals; admin lists dense with row actions on hover and always visible on touch",
+      "component_notes": "raise fidelity to the comps: notched ticket corners, brass number plates, stamp labels, dashed routes with red pins, compass rose — the current build is simpler than the comps"
+    }
+  },
+  "design_style": {
+    "aesthetic": {
+      "mood": ["warm", "trustworthy", "contemplative", "cinematic", "hospitable"],
+      "visual_metaphor": "a travel journal: postcards, boarding passes, stamps, routes drawn on an old map",
+      "era_influence": "mid-century travel ephemera meets a contemporary editorial magazine",
+      "genre": "luxury editorial travel",
+      "personality_traits": ["reliable", "warm", "meticulous", "quietly lavish"],
+      "adjectives": ["ink and gold", "papery", "golden hour", "calm"]
+    },
+    "visual_language": {
+      "complexity": "rich",
+      "ornamentation": "decorative but restrained (stamps, perforations, routes, pins)",
+      "whitespace_usage": "generous",
+      "visual_weight_distribution": "dark cinematic hero on top, light paper body, ink feature panels as punctuation",
+      "focal_strategy": "single hero element, then progressive reveal",
+      "contrast_level": "high",
+      "texture_usage": "paper grain and faint cartographic lines as background only, never under small text"
+    },
+    "composition": {
+      "hierarchy_method": "typographic scale plus dark/light inversion",
+      "balance_type": "asymmetric",
+      "flow_direction": "Z-pattern guided down the page by a drawn route line",
+      "grouping_strategy": "ticket rails, route-card mosaic, bands",
+      "negative_space_role": "frames photography and gives the serif headlines air"
+    },
+    "imagery": {
+      "photo_treatment": "golden-hour cinematic realism, warm grade, left third falling into ink shadow for copy; real photos (vehicles, team, trips) get a warm grade and slow motion in code, never AI alteration",
+      "illustration_style": "fine engraved line glyphs",
+      "graphic_elements": "stamps, perforations, dashed routes, map pins, compass rose, brass number plates",
+      "pattern_usage": "faint map-contour texture (public/generated/ablux-paper-route-texture.png)",
+      "image_shape": "notched ticket corners, deckled postcard borders, rounded 10-16px"
+    },
+    "interaction_feel": {
+      "feedback_style": "ink press (translateY 1px), gold underline sweep",
+      "hover_behavior": "image slow zoom 1.04, stamp rotates 2deg, card lifts with warm shadow",
+      "transition_personality": "smooth glide",
+      "loading_style": "skeletons with a paper shimmer matching the final layout",
+      "microinteraction_density": "moderate"
+    },
+    "brand_voice_in_ui": {
+      "tone": "calm, certain, warm",
+      "formality": "polite formal Serbian ('Vi')",
+      "cta_style": "friendly invitation: 'Pogledaj ponude', 'Pošalji upit', 'Rezerviši mesto'",
+      "empty_state_approach": "suggest alternatives instead of 'no results' (nearby months, similar destinations, contact us)",
+      "error_tone": "clear and reassuring, says what to do next"
+    }
+  },
+  "visual_effects": {
+    "overview": {
+      "effect_intensity": "moderate",
+      "performance_tier": "medium",
+      "fallback_strategy": "static AVIF posters and CSS reveals on prefers-reduced-motion, Save-Data, or low-end devices",
+      "primary_technology": "GSAP + HTML5 video"
+    },
+    "background_effects": {
+      "type": "video-bg",
+      "description": "living postcard: 8 s seamless Veo loops of the hero scenes (static camera, natural motion only), crossfaded per ticket channel; paper texture elsewhere",
+      "technology": "<video muted playsinline loop preload=metadata> with AVIF poster, paused when off-screen",
+      "params": { "color_palette": "golden hour + ink shadows", "speed": "slow", "density": "n/a", "opacity": "1", "blend_mode": "normal" }
+    },
+    "particle_systems": { "enabled": false, "type": "none", "description": "none", "technology": "none", "params": { "count": "0", "shape": "none", "size_range": "none", "movement_pattern": "none", "color_behavior": "none", "interaction": "none", "spawn_area": "none" } },
+    "3d_elements": { "enabled": false, "type": "none", "description": "none", "technology": "none", "params": { "renderer": "none", "lighting": "none", "camera": "none", "materials": "none", "geometry": "none", "post_processing": [], "interaction_model": "none" } },
+    "shader_effects": { "enabled": false, "type": "none", "description": "none", "technology": "none", "params": { "uniforms": "none", "vertex_manipulation": "none", "fragment_output": "none", "noise_type": "none", "distortion": "none" } },
+    "scroll_effects": {
+      "parallax": { "enabled": true, "layers": "2", "depth_range": "hero scene scale 1.0-1.06, paper band", "speed_curve": "linear scrub" },
+      "scroll_triggered_animations": { "enabled": true, "trigger_points": "top 82%-96%", "animation_type": "fade-up, clip-reveal, draw-SVG route lines", "scrub_behavior": "triggered once; route line scrubbed" },
+      "scroll_morphing": { "enabled": true, "description": "the hero scene shrinks into a postcard (white deckled border + stamp), tilts ~2deg and lands as the first route card; the booking bar docks into a sticky 'Kuda putujete?' pill under the nav" }
+    },
+    "text_effects": {
+      "type": "split-by-line rise",
+      "description": "headline lines rise with 80ms stagger; the gold italic word gets an underline draw",
+      "technology": "GSAP",
+      "params": { "split_strategy": "by-line", "animation_per_unit": "y 22px + opacity", "stagger": "80ms", "effect_style": "calm" }
+    },
+    "cursor_effects": { "enabled": false, "type": "none", "description": "none", "params": { "shape": "none", "size": "none", "blend_mode": "none", "trail": "none", "interaction_zone": "none" } },
+    "image_effects": {
+      "type": "reveal-clip",
+      "description": "inset clip reveal on enter, slow zoom on hover, Ken Burns on real photos",
+      "technology": "GSAP + CSS transforms",
+      "params": { "filter_pipeline": "warm grade baked into assets", "hover_transform": "scale 1.04", "reveal_animation": "clip-path inset 12% → 0", "distortion_type": "none" }
+    },
+    "glassmorphism_neumorphism": {
+      "enabled": true,
+      "style": "frosted-layers (nav only)",
+      "params": { "blur_radius": "12px", "transparency": "0.82", "border_treatment": "1px hairline", "shadow_type": "low", "light_source_angle": "top" }
+    },
+    "canvas_drawings": { "enabled": false, "type": "none", "description": "none", "technology": "none", "params": { "draw_method": "none", "animation_loop": "none", "color_scheme": "none", "responsiveness": "none", "interaction": "none" } },
+    "svg_animations": {
+      "enabled": true,
+      "type": "path-draw",
+      "description": "route lines drawing between sections, stamp press, ticket perforation 'tear' as the channel timer",
+      "params": { "animation_method": "GSAP stroke-dashoffset", "path_morphing": "none", "stroke_animation": "dashoffset draw", "filter_effects": "none" }
+    },
+    "composite_notes": "One signature moment only (hero → postcard). Everything else is quiet reveals. Videos: desktop 1920x1080 <= 3 MB, mobile 720x1280 <= 1.5 MB; only the default channel loads a video on mobile, other channels use stills with slow zoom. Pause videos when off-screen. Real photos are never altered by AI."
+  }
+}

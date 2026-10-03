@@ -1,0 +1,46 @@
+{
+  "productType": 6,
+  "checkIn": "2026-10-11T00:00:00",
+  "checkInTo": "2026-11-10T00:00:00",
+  "includeSubLocations": true,
+  "roomCriteria": [
+    {
+      "adult": 2,
+      "childAges": []
+    }
+  ],
+  "checkAllotment": false,
+  "checkStopSale": true,
+  "showAllotment": false,
+  "showStopSale": false,
+  "getOnlyDiscountedPrice": false,
+  "getOnlyBestOffers": true,
+  "getTransportations": true,
+  "pagingOption": {
+    "productType": 0,
+    "pageRowCount": 1,
+    "currentPage": 1,
+    "sort": 0,
+    "getFilters": false,
+    "isNewPagingRequest": false,
+    "getOnlyDefaultProducts": false,
+    "getPagingCount": false
+  },
+  "showOnlyNonStopFlight": false,
+  "compulsory": false,
+  "priceSearchResponseDetails": {},
+  "holidayPackage": {
+    "code": "11ANDAT26N"
+  },
+  "showPriceDetailsInOffer": false,
+  "targetProvider": 0,
+  "id": "61d6b25f-7815-45ae-9624-4f9fa112d19b",
+  "dataSource": 0,
+  "webRequestDetail": {
+    "clientAddress": "172.16.255.254",
+    "domain": "b2cservice.bigblue.rs",
+    "userAgent": "RestSharp/106.11.7.0"
+  },
+  "culture": "sr-Latn-RS",
+  "provider": 7
+}

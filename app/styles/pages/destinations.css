@@ -1,0 +1,844 @@
+/* Step 12: destination pages /putovanja, /putovanja/[zemlja], /destinacije (see app/styles/pages.css for the shared frame). */
+
+/* ───────────────────────── Staff note ───────────────────────── */
+
+.dst-staff {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 1.5rem;
+  border: 1px dashed var(--ablux-line-strong);
+  border-radius: var(--ablux-radius-card);
+  padding: 0.75rem 1rem;
+  color: var(--ablux-text-muted);
+  font-size: 0.9375rem;
+}
+
+.dst-staff p {
+  flex: 1 1 16rem;
+  margin: 0;
+}
+
+.dst-staff-zone {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.dst-staff-zone .dst-staff {
+  margin-top: 0;
+}
+
+/* ───────────────────────── Postcard cards (countries, travel groups) ───────────────────────── */
+
+.dst-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: 2.75rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dst-grid--groups {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+}
+
+.dst-grid > li {
+  display: flex;
+  min-width: 0;
+}
+
+.dst-country {
+  position: relative;
+  display: grid;
+  flex: 1;
+  align-content: start;
+  gap: 1.1rem;
+}
+
+.dst-postcard .ui-postcard__photo img,
+.dst-postcard__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dst-postcard .ui-postcard__photo img {
+  transition: transform 0.7s var(--ablux-ease);
+}
+
+.dst-country:hover .ui-postcard,
+.dst-country:focus-within .ui-postcard {
+  transform: rotate(0deg) translateY(-2px);
+}
+
+.dst-country:hover .ui-postcard__photo img {
+  transform: scale(1.04);
+}
+
+.dst-country__body {
+  display: grid;
+  gap: 0.4rem;
+  padding-inline: 0.25rem;
+}
+
+.dst-country__overline {
+  margin: 0;
+  color: var(--ablux-teal-text);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.dst-country__title {
+  margin: 0;
+  color: var(--ablux-text);
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.5rem, 2vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+  text-wrap: balance;
+}
+
+.dst-country__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* The title link covers the whole card (one link per card, no nested controls). */
+.dst-stretch::after {
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+  z-index: 4;
+  border-radius: var(--ablux-radius-card);
+}
+
+.dst-stretch:focus-visible {
+  outline: none;
+}
+
+.dst-stretch:focus-visible::after {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: 2px;
+}
+
+.dst-country:hover .dst-country__title a {
+  text-decoration: underline;
+  text-decoration-color: var(--ablux-c-gold);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.dst-country__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+  margin: 0;
+  color: var(--ablux-text);
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.dst-country__facts > span + span::before {
+  content: "·";
+  margin-right: 0.5rem;
+  color: var(--ablux-text-muted);
+}
+
+.dst-country__meta,
+.dst-country__lead {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--ablux-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.dst-country__meta svg {
+  flex: none;
+  margin-top: 0.2rem;
+  color: var(--ablux-teal-text);
+}
+
+.dst-country__lead {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+/* ───────────────────────── Empty and closing ───────────────────────── */
+
+.dst-empty {
+  margin-top: 0.5rem;
+}
+
+.dst-closing {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  max-width: 44rem;
+  margin: 0 auto;
+  border-top: 1px dashed var(--ablux-line-strong);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.dst-closing__title {
+  margin: 0;
+  color: var(--ablux-text);
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.15;
+  padding-block: 0.08em;
+}
+
+.dst-closing p {
+  margin: 0;
+  color: var(--ablux-text-muted);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+/* ───────────────────────── Country page: intro ───────────────────────── */
+
+.dst-about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.dst-about__prose p {
+  font-size: 1.0625rem;
+}
+
+.dst-about__generated {
+  border-top: 1px dashed var(--ablux-line-strong);
+  padding-top: 1rem;
+}
+
+.dst-about__aside {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.dst-about__label {
+  margin: 0 0 0.75rem;
+  color: var(--ablux-teal-text);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.dst-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dst-chip {
+  text-decoration: none;
+}
+
+.dst-chip:hover {
+  border-color: var(--ablux-line-strong);
+  background: var(--ablux-surface-2);
+}
+
+.dst-chip:focus-visible {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: 2px;
+}
+
+.dst-facts {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ablux-text);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.dst-facts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.dst-facts svg {
+  flex: none;
+  margin-top: 0.1rem;
+  color: var(--ablux-teal-text);
+}
+
+/* ───────────────────────── Country page: admin destinations ───────────────────────── */
+
+.dst-board {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.dst-board--list {
+  grid-template-columns: minmax(15rem, 20rem) minmax(0, 1fr);
+  align-items: start;
+}
+
+.dst-board__list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dst-pick {
+  display: grid;
+  gap: 0.25rem;
+  width: 100%;
+  min-height: 3.5rem;
+  border: 1px solid var(--ablux-line);
+  border-left: 4px solid transparent;
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  padding: 0.85rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--ablux-shadow-low);
+  transition:
+    transform var(--ablux-dur-micro) var(--ablux-ease),
+    border-color var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+.dst-pick:hover {
+  transform: translateY(-2px);
+  border-color: var(--ablux-line-strong);
+}
+
+.dst-pick[aria-pressed="true"] {
+  border-color: var(--ablux-line-strong);
+  border-left-color: var(--ablux-c-gold);
+}
+
+.dst-pick:focus-visible {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: 2px;
+}
+
+.dst-pick__kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ablux-teal-text);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dst-pick__title {
+  font-family: var(--ablux-editorial);
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
+.dst-pick__price {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.dst-detail {
+  overflow: hidden;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  box-shadow: var(--ablux-shadow-card);
+}
+
+.dst-detail__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--ablux-c-paper-2);
+}
+
+.dst-detail__media:empty {
+  display: none;
+}
+
+.dst-detail__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dst-detail__media iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.dst-detail__no-preview {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.75rem;
+  height: 100%;
+  margin: 0;
+  padding: 2rem;
+  color: var(--ablux-text-muted);
+  text-align: center;
+}
+
+.dst-detail__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 18rem);
+  gap: 1.5rem 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.dst-detail__copy {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 0.75rem;
+}
+
+.dst-detail__title {
+  margin: 0;
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.dst-detail__text {
+  margin: 0;
+  color: var(--ablux-text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
+.dst-detail__actions {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+  border-left: 1px dashed var(--ablux-line-strong);
+  padding-left: 1.5rem;
+}
+
+.dst-detail__price {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0 0 0.25rem;
+}
+
+.dst-detail__price span {
+  color: var(--ablux-text-muted);
+  font-size: 0.875rem;
+}
+
+.dst-detail__price strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.dst-thumbs {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0 clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3vw, 2rem);
+  list-style: none;
+}
+
+.dst-thumbs img {
+  display: block;
+  width: 9rem;
+  height: 6rem;
+  border-radius: var(--ablux-radius-stamp);
+  object-fit: cover;
+}
+
+/* ───────────────────────── Country page: travel group details ───────────────────────── */
+
+.dst-gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0 0 0.75rem;
+  list-style: none;
+  scroll-snap-type: x mandatory;
+}
+
+.dst-gallery:focus-visible {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: 4px;
+}
+
+.dst-gallery li {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.dst-gallery img,
+.dst-gallery video {
+  display: block;
+  width: auto;
+  max-width: 85vw;
+  height: clamp(14rem, 30vw, 20rem);
+  border: 8px solid var(--ablux-c-paper-edge);
+  border-radius: var(--ablux-radius-stamp);
+  object-fit: cover;
+  box-shadow: var(--ablux-shadow-card);
+}
+
+.dst-itinerary {
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+  max-width: 50rem;
+  margin: 0;
+  padding: 0 0 0 2.25rem;
+  list-style: none;
+}
+
+.dst-itinerary::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.55rem;
+  border-left: 2px dashed rgba(155, 58, 46, 0.46);
+}
+
+.dst-itinerary li {
+  position: relative;
+}
+
+.dst-itinerary__pin {
+  position: absolute;
+  top: 0.3rem;
+  left: -2.15rem;
+  width: 0.88rem;
+  height: 0.88rem;
+  border-radius: 50%;
+  background: var(--ablux-c-brick);
+  box-shadow: 0 0 0 0.25rem rgba(155, 58, 46, 0.14);
+}
+
+.dst-itinerary__day {
+  margin: 0 0 0.3rem;
+  color: var(--ablux-teal-text);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dst-itinerary__day span {
+  color: var(--ablux-text-muted);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.dst-itinerary__text {
+  margin: 0;
+  color: var(--ablux-text);
+  font-size: 1rem;
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
+.dst-terms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1.25rem;
+}
+
+.dst-terms__title {
+  margin: 0 0 1rem;
+  font-family: var(--ablux-editorial);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.dst-terms__list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dst-terms__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.5;
+}
+
+.dst-terms__list svg {
+  flex: none;
+  margin-top: 0.1rem;
+}
+
+.dst-terms__yes {
+  color: var(--ablux-c-teal);
+}
+
+.dst-terms__no {
+  color: var(--ablux-c-brick);
+}
+
+/* ───────────────────────── Country page: offers ───────────────────────── */
+
+.dst-offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: 1.75rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dst-offers > li {
+  display: flex;
+  min-width: 0;
+}
+
+.dst-offers > li > * {
+  flex: 1;
+}
+
+.dst-offers__foot {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.dst-note {
+  max-width: 44rem;
+  margin: 0;
+  color: var(--ablux-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* ───────────────────────── /destinacije: search and directory ───────────────────────── */
+
+.dst-search {
+  display: grid;
+  grid-template-columns: minmax(0, 36rem) minmax(0, 1fr);
+  align-items: end;
+  gap: 0.5rem 2rem;
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+
+.dst-search__control {
+  position: relative;
+  display: block;
+}
+
+.dst-search__icon {
+  position: absolute;
+  top: 50%;
+  left: 0.95rem;
+  z-index: 1;
+  color: var(--ablux-text-muted);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dst-search__control .ui-input {
+  padding-left: 2.85rem;
+}
+
+.dst-search__status {
+  margin: 0 0 2.1rem;
+  color: var(--ablux-text-muted);
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.dst-directory {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  gap: 2.5rem 2.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dst-entry {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem;
+  border-top: 1px dashed var(--ablux-line-strong);
+  padding-top: 1.5rem;
+}
+
+.dst-entry__card .ui-postcard__deckle {
+  padding: 7px;
+}
+
+.dst-entry__card .ui-postcard__stamp {
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 2.1rem;
+  height: 2.5rem;
+  padding: 4px;
+}
+
+.dst-entry__card .ui-postcard__stamp svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.dst-entry__card .ui-postcard__postmark,
+.dst-entry__card .ui-postcard__cancel {
+  display: none;
+}
+
+.dst-entry__card .ui-postcard__fallback svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.dst-entry__card .ui-postcard__fallback span {
+  font-size: 1.1rem;
+}
+
+.dst-entry__body {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.dst-entry__title {
+  margin: 0;
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.5rem, 2.2vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.dst-entry__title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding-block: 0.08em;
+  color: var(--ablux-text);
+  text-decoration: none;
+}
+
+.dst-entry__title a svg {
+  color: var(--ablux-c-gold-ink);
+  transition: transform var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+[data-theme="dark"] .dst-entry__title a svg {
+  color: var(--ablux-c-gold-2);
+}
+
+.dst-entry__title a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--ablux-c-gold);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.dst-entry__title a:hover svg {
+  transform: translateX(3px);
+}
+
+.dst-entry__title a:focus-visible {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.dst-entry .dst-chips {
+  margin-top: 0.35rem;
+}
+
+/* ───────────────────────── Responsive ───────────────────────── */
+
+@media (max-width: 1023px) {
+  .dst-about,
+  .dst-board--list,
+  .dst-detail__body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dst-detail__actions {
+    border-top: 1px dashed var(--ablux-line-strong);
+    border-left: 0;
+    padding-top: 1.25rem;
+    padding-left: 0;
+  }
+
+  .dst-search {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dst-search__status {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .dst-grid {
+    gap: 2.25rem;
+  }
+
+  .dst-entry {
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .dst-entry__card .ui-postcard__stamp {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dst-postcard .ui-postcard__photo img,
+  .dst-pick,
+  .dst-entry__title a svg {
+    transition: none;
+  }
+
+  .dst-country:hover .ui-postcard__photo img,
+  .dst-pick:hover {
+    transform: none;
+  }
+}

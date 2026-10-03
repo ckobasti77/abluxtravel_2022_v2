@@ -1,0 +1,156 @@
+/*
+ * Base layer: element defaults and browser surfaces themed from the tokens.
+ * Lives in @layer base so Tailwind utilities and components always win.
+ */
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  html,
+  [data-theme] {
+    background: var(--ablux-bg);
+    color: var(--ablux-text);
+    scrollbar-color: color-mix(in srgb, var(--ablux-text) 26%, transparent) transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--ablux-bg);
+    color: var(--ablux-text);
+    font-family: var(--ablux-sans);
+    font-synthesis-weight: none;
+    caret-color: var(--ablux-accent-text);
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+    transition:
+      color var(--ablux-dur-micro) var(--ablux-ease),
+      text-decoration-color var(--ablux-dur-micro) var(--ablux-ease);
+  }
+
+  /*
+   * Serif voice for page headlines (Caron Clearance Rule: line-height >= 1.1 and
+   * a little block padding so carons on Č Ž Š never touch or clip).
+   * h3-h6 are Manrope: card titles, labels, data.
+   */
+  h1,
+  h2 {
+    font-family: var(--ablux-editorial);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--ablux-sans);
+    letter-spacing: 0;
+  }
+
+  /* Admin is "operate" mode: Manrope only. */
+  [data-mode="operate"] :is(h1, h2) {
+    font-family: var(--ablux-sans);
+    letter-spacing: -0.01em;
+  }
+
+  table,
+  time,
+  data,
+  output,
+  kbd {
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: var(--ablux-selection);
+    color: var(--ablux-text);
+  }
+
+  ::placeholder {
+    color: var(--ablux-text-muted);
+    opacity: 1;
+  }
+
+  :where(a, button, input, select, textarea, summary, [role="button"], [tabindex]):focus-visible {
+    outline: 2px solid var(--ablux-focus);
+    outline-offset: 2px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: 0.9rem;
+    z-index: 100;
+    transform: translateY(-180%);
+    border-radius: var(--ablux-radius-card);
+    border: 1px solid var(--ablux-line-strong);
+    background: var(--ablux-surface);
+    color: var(--ablux-text);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--ablux-shadow-medium);
+    transition: transform var(--ablux-dur-micro) var(--ablux-ease);
+  }
+
+  .skip-link:focus-visible {
+    transform: translateY(0);
+  }
+
+  /* Anti-spam honeypot field: hidden from people and assistive tech, visible to bots. */
+  .form-honeypot {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+/* Reduced motion is absolute (DESIGN.md → Motion). Unlayered so nothing overrides it. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

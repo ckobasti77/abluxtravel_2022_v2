@@ -1,0 +1,729 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T21:47:09.506Z",
+  "title": "Design System: ABLux Travel",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papir (Paper)",
+        "canonical": "#F8F4EA",
+        "tonalRamp": [
+          "#392E13",
+          "#635121",
+          "#8E732F",
+          "#B8953D",
+          "#CBAD62",
+          "#D9C38C",
+          "#E9DDBE",
+          "#F9F5EC"
+        ]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "Light Paper",
+        "canonical": "#FDFAF3",
+        "tonalRamp": [
+          "#42310B",
+          "#725513",
+          "#A2791B",
+          "#D29D23",
+          "#E1B44C",
+          "#E9C87C",
+          "#F3E0B5",
+          "#FBF6E9"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Paper Band",
+        "canonical": "#EFE8DA",
+        "tonalRamp": [
+          "#352B17",
+          "#5D4B28",
+          "#846B39",
+          "#AB8B4A",
+          "#C0A46D",
+          "#D1BD94",
+          "#E5D9C2",
+          "#F7F4ED"
+        ]
+      },
+      "paper-3": {
+        "role": "neutral",
+        "displayName": "Pressed Paper",
+        "canonical": "#E2D9C6",
+        "tonalRamp": [
+          "#332B1A",
+          "#584A2D",
+          "#7D6940",
+          "#A28953",
+          "#B8A374",
+          "#CBBB9A",
+          "#E2D9C6",
+          "#F6F4EE"
+        ]
+      },
+      "paper-edge": {
+        "role": "neutral",
+        "displayName": "Postcard Edge",
+        "canonical": "#FFFAF0",
+        "tonalRamp": [
+          "#4D3300",
+          "#855800",
+          "#BD7E00",
+          "#F5A300",
+          "#FFB92E",
+          "#FFCC66",
+          "#FFE2A8",
+          "#FFF6E5"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Mastilo (Green-Black Ink)",
+        "canonical": "#06151A",
+        "tonalRamp": [
+          "#0E323E",
+          "#19576C",
+          "#237C99",
+          "#2EA1C7",
+          "#55B7D8",
+          "#83CAE2",
+          "#B9E1EF",
+          "#EAF6FA"
+        ]
+      },
+      "ink-2": {
+        "role": "primary",
+        "displayName": "Ink Card",
+        "canonical": "#0A2428",
+        "tonalRamp": [
+          "#0F373D",
+          "#1B5F6A",
+          "#268897",
+          "#31B0C4",
+          "#58C4D5",
+          "#85D4E0",
+          "#BAE7EE",
+          "#EBF8FA"
+        ]
+      },
+      "ink-3": {
+        "role": "primary",
+        "displayName": "Ink Elevated",
+        "canonical": "#10302F",
+        "tonalRamp": [
+          "#133938",
+          "#216361",
+          "#2F8E8B",
+          "#3DB8B4",
+          "#62CBC7",
+          "#8CD9D6",
+          "#BEE9E8",
+          "#ECF9F8"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Old Gold (gradient end)",
+        "canonical": "#B99146",
+        "tonalRamp": [
+          "#372C15",
+          "#604B24",
+          "#896B34",
+          "#B28B43",
+          "#C6A567",
+          "#D5BD90",
+          "#E7DAC0",
+          "#F8F4EC"
+        ]
+      },
+      "gold-2": {
+        "role": "primary",
+        "displayName": "Dukat Gold",
+        "canonical": "#D5A54F",
+        "tonalRamp": [
+          "#3E2D0F",
+          "#6B4E1A",
+          "#986F24",
+          "#C6902F",
+          "#D7A956",
+          "#E2C083",
+          "#EEDBB9",
+          "#FAF4EA"
+        ]
+      },
+      "gold-ink": {
+        "role": "primary",
+        "displayName": "Gold Ink (text on paper)",
+        "canonical": "#86652A",
+        "tonalRamp": [
+          "#3A2C12",
+          "#654C20",
+          "#906C2D",
+          "#BA8C3A",
+          "#CDA660",
+          "#DABE8B",
+          "#EADABD",
+          "#F9F4EC"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Tirkiz Teal",
+        "canonical": "#0E7C7B",
+        "tonalRamp": [
+          "#084544",
+          "#0D7776",
+          "#13AAA8",
+          "#19DCDA",
+          "#43EAE8",
+          "#76EFEE",
+          "#B1F6F6",
+          "#E8FCFC"
+        ]
+      },
+      "teal-ink": {
+        "role": "secondary",
+        "displayName": "Teal Ink (small text)",
+        "canonical": "#0B6968",
+        "tonalRamp": [
+          "#074545",
+          "#0D7877",
+          "#12ABA9",
+          "#17DEDB",
+          "#42EBE9",
+          "#75F0EF",
+          "#B1F7F6",
+          "#E8FDFC"
+        ]
+      },
+      "teal-deep": {
+        "role": "secondary",
+        "displayName": "Deep Teal (info)",
+        "canonical": "#2F6F73",
+        "tonalRamp": [
+          "#163436",
+          "#265B5E",
+          "#378186",
+          "#47A8AE",
+          "#6BBDC2",
+          "#92CFD3",
+          "#C1E4E6",
+          "#EDF7F8"
+        ]
+      },
+      "brick": {
+        "role": "tertiary",
+        "displayName": "Cigla Brick",
+        "canonical": "#9B3A2E",
+        "tonalRamp": [
+          "#3B1612",
+          "#66261E",
+          "#92362B",
+          "#BD4738",
+          "#CF6A5E",
+          "#DC9289",
+          "#EBC1BC",
+          "#F9EDEB"
+        ]
+      },
+      "ochre": {
+        "role": "tertiary",
+        "displayName": "Ochre (warning fill)",
+        "canonical": "#C28A2C",
+        "tonalRamp": [
+          "#3E2C0E",
+          "#6C4D19",
+          "#9A6D23",
+          "#C88E2D",
+          "#D8A755",
+          "#E3BF82",
+          "#EFDBB8",
+          "#FAF4EA"
+        ]
+      },
+      "silver": {
+        "role": "neutral",
+        "displayName": "Silver Mist",
+        "canonical": "#D7E2DF",
+        "tonalRamp": [
+          "#202C29",
+          "#384D47",
+          "#4F6D65",
+          "#678E83",
+          "#86A79E",
+          "#A6BFB8",
+          "#CDDBD7",
+          "#F0F4F3"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Sage-Grey",
+        "canonical": "#66706C",
+        "tonalRamp": [
+          "#242827",
+          "#3F4543",
+          "#5A635F",
+          "#75807C",
+          "#929B97",
+          "#AFB6B3",
+          "#D2D6D4",
+          "#F2F3F2"
+        ]
+      },
+      "muted-strong": {
+        "role": "neutral",
+        "displayName": "Muted Strong",
+        "canonical": "#5A6461",
+        "tonalRamp": [
+          "#242827",
+          "#3F4644",
+          "#596360",
+          "#74817D",
+          "#919C99",
+          "#AEB7B4",
+          "#D1D6D5",
+          "#F2F3F3"
+        ]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone (decorative only)",
+        "canonical": "#9A9384",
+        "tonalRamp": [
+          "#2A2822",
+          "#49453C",
+          "#686255",
+          "#867F6E",
+          "#A19A8C",
+          "#BAB5AB",
+          "#D8D5CF",
+          "#F4F3F1"
+        ]
+      },
+      "line-field": {
+        "role": "neutral",
+        "displayName": "Field Border",
+        "canonical": "#828887",
+        "tonalRamp": [
+          "#252727",
+          "#414443",
+          "#5C6160",
+          "#777D7C",
+          "#949998",
+          "#B1B4B4",
+          "#D3D5D4",
+          "#F2F3F2"
+        ]
+      },
+      "tinta-muted": {
+        "role": "neutral",
+        "displayName": "Tinta Muted Text",
+        "canonical": "#B9BAB4",
+        "tonalRamp": [
+          "#272825",
+          "#444540",
+          "#61625A",
+          "#7E7F75",
+          "#999B92",
+          "#B5B6AF",
+          "#D5D5D2",
+          "#F3F3F2"
+        ]
+      },
+      "tinta-teal": {
+        "role": "secondary",
+        "displayName": "Tinta Teal",
+        "canonical": "#5FB8B4",
+        "tonalRamp": [
+          "#183534",
+          "#295C5A",
+          "#3A837F",
+          "#4BAAA5",
+          "#6EBFBB",
+          "#95D0CD",
+          "#C3E4E3",
+          "#EDF7F7"
+        ]
+      },
+      "tinta-brick": {
+        "role": "tertiary",
+        "displayName": "Tinta Brick",
+        "canonical": "#E08B7E",
+        "tonalRamp": [
+          "#3E150F",
+          "#6B241A",
+          "#983425",
+          "#C5432F",
+          "#D66756",
+          "#E19084",
+          "#EEC0B9",
+          "#FAEDEA"
+        ]
+      },
+      "tinta-info": {
+        "role": "secondary",
+        "displayName": "Tinta Info",
+        "canonical": "#9CCFD0",
+        "tonalRamp": [
+          "#193334",
+          "#2B595A",
+          "#3D7F80",
+          "#4FA4A6",
+          "#71BABC",
+          "#97CDCE",
+          "#C4E2E3",
+          "#EEF7F7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero h1 only; italic gold-2 emphasis word; line-height >= 1.1 for carons."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2 (Cormorant)."
+      },
+      "headline-sm": {
+        "displayName": "Headline small",
+        "purpose": "Closing CTA, partners heading, detail h1 under photo."
+      },
+      "title-serif": {
+        "displayName": "Title serif",
+        "purpose": "Route, ticket, offer and public dialog titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Manrope card titles (proof, process, vehicle)."
+      },
+      "body-lead": {
+        "displayName": "Body lead",
+        "purpose": "Hero subline and section intros, max 37rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, >= 16px on every breakpoint, 65-72ch."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Metadata rows only; never paragraphs on mobile."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons and text links."
+      },
+      "overline": {
+        "displayName": "Overline",
+        "purpose": "Section kickers and card meta, uppercase; teal-ink on paper, gold-2 on ink."
+      },
+      "plate-numeral": {
+        "displayName": "Plate numeral",
+        "purpose": "Brass plates and step numbers, lining + tabular figures."
+      },
+      "price": {
+        "displayName": "Price",
+        "purpose": "\"od X €\" amounts, tabular, ink (never gold)."
+      },
+      "admin-title": {
+        "displayName": "Admin title",
+        "purpose": "Operate-mode page titles (Manrope only)."
+      },
+      "admin-body": {
+        "displayName": "Admin body",
+        "purpose": "Operate-mode tables and forms, tabular numerals."
+      }
+    },
+    "shadows": [
+      {
+        "name": "low",
+        "value": "0 1px 2px rgba(6,21,26,.06)",
+        "purpose": "Fields, chips, table toolbars."
+      },
+      {
+        "name": "medium",
+        "value": "0 12px 32px -12px rgba(6,21,26,.18)",
+        "purpose": "Sticky search pill, dropdowns, mega menu, hover on paper cards."
+      },
+      {
+        "name": "high",
+        "value": "0 28px 60px -20px rgba(6,21,26,.35)",
+        "purpose": "Dialogs, bottom sheets, command palette."
+      },
+      {
+        "name": "card-rest",
+        "value": "0 28px 54px -44px rgba(6,21,26,.72)",
+        "purpose": "Route and ticket cards at rest (as built)."
+      },
+      {
+        "name": "ink-panel",
+        "value": "0 34px 80px -56px #020a0c",
+        "purpose": "Ink feature panels on paper (as built)."
+      },
+      {
+        "name": "paper-band",
+        "value": "0 -18px 42px rgba(2,10,12,.28)",
+        "purpose": "Paper strip rising over the hero photo."
+      },
+      {
+        "name": "gold-action",
+        "value": "0 18px 34px -22px rgba(185,145,70,.72)",
+        "purpose": "Primary gold button only."
+      },
+      {
+        "name": "brass-plate",
+        "value": "inset 0 1px 0 rgba(255,250,240,.55), inset 0 -1px 0 rgba(6,21,26,.35), 0 6px 14px -8px rgba(6,21,26,.5)",
+        "purpose": "Engraved brass number plate."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "CSS equivalent of GSAP power3.out; all reveals and state changes."
+      },
+      {
+        "name": "ease-scrub",
+        "value": "linear (GSAP ease: \"none\")",
+        "purpose": "Scroll-scrubbed parallax, route drawing, video currentTime."
+      },
+      {
+        "name": "duration-micro",
+        "value": "180-220ms",
+        "purpose": "Hover/press (button 0.22s)."
+      },
+      {
+        "name": "duration-state",
+        "value": "420ms",
+        "purpose": "Pins, chips, small state changes."
+      },
+      {
+        "name": "duration-reveal",
+        "value": "720-950ms",
+        "purpose": "Section and hero copy reveals."
+      },
+      {
+        "name": "duration-macro",
+        "value": "1150-1800ms",
+        "purpose": "Hero background settle, watermark."
+      },
+      {
+        "name": "duration-admin",
+        "value": "150-250ms",
+        "purpose": "Operate-mode state transitions only."
+      },
+      {
+        "name": "stagger",
+        "value": "60-90ms",
+        "purpose": "Grouped reveals."
+      },
+      {
+        "name": "reveal-offset",
+        "value": "translateY 22-46px",
+        "purpose": "Fade-up distance; no filter blur."
+      },
+      {
+        "name": "trigger-start",
+        "value": "top 82% (top 96% for hero-overlapping content)",
+        "purpose": "ScrollTrigger start; play once."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-design",
+        "value": "390px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "legacy-ablux",
+        "value": "1120px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "desktop-design",
+        "value": "1440px"
+      }
+    ],
+    "themes": {
+      "default": "light",
+      "attribute": "html[data-theme]",
+      "light": "Papir",
+      "dark": "Tinta (target, step 04)",
+      "note": "Paper objects (tickets, postcards, stamps) stay paper in Tinta."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold gradient action with ink text; one per view.",
+      "html": "<button class=\"ds-btn-primary\">Pošalji upit <svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.75rem;min-height:3.2rem;padding:.9rem 1.35rem;border-radius:8px;border:1px solid color-mix(in srgb,#B99146 72%,#fff 28%);background:linear-gradient(135deg,#D5A54F,#B99146);color:#06151A;font:800 .9rem/1 Manrope,system-ui,sans-serif;box-shadow:0 18px 34px -22px rgba(185,145,70,.72);cursor:pointer;transition:transform .22s cubic-bezier(.22,1,.36,1)}.ds-btn-primary:hover{transform:translateY(-2px)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid #86652A;outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Paper button with ink text for secondary actions on paper.",
+      "html": "<button class=\"ds-btn-secondary\">Pogledaj ponude</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;gap:.75rem;min-height:3.2rem;padding:.9rem 1.35rem;border-radius:8px;border:1px solid rgba(6,21,26,.18);background:rgba(255,250,240,.62);color:#06151A;font:800 .9rem/1 Manrope,system-ui,sans-serif;cursor:pointer;transition:transform .22s cubic-bezier(.22,1,.36,1),background .22s}.ds-btn-secondary:hover{transform:translateY(-2px);background:#FDFAF3;border-color:rgba(6,21,26,.34)}.ds-btn-secondary:focus-visible{outline:2px solid #86652A;outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Button on Ink",
+      "kind": "button",
+      "refersTo": "button-ghost-on-ink",
+      "description": "Outlined paper-edge button over the ink hero.",
+      "html": "<div style=\"background:#06151A;padding:24px\"><button class=\"ds-btn-ghost\">Pošalji upit</button></div>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:3.2rem;padding:.9rem 1.35rem;border-radius:8px;border:1px solid rgba(255,250,240,.34);background:rgba(5,18,22,.38);color:#FFFAF0;font:800 .9rem/1 Manrope,system-ui,sans-serif;cursor:pointer;transition:transform .22s cubic-bezier(.22,1,.36,1)}.ds-btn-ghost:hover{transform:translateY(-2px);border-color:rgba(255,250,240,.6)}.ds-btn-ghost:focus-visible{outline:2px solid #D5A54F;outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Label above, paper field, 3:1 border, gold-ink focus ring.",
+      "html": "<label class=\"ds-field\"><span>Broj telefona</span><input type=\"tel\" placeholder=\"064 123 4567\"></label>",
+      "css": ".ds-field{display:grid;gap:6px;font:700 .875rem/1.3 Manrope,system-ui,sans-serif;color:#06151A}.ds-field input{min-height:48px;padding:12px 14px;border-radius:10px;border:1px solid #828887;background:#FDFAF3;color:#06151A;font:400 1rem/1.4 Manrope,system-ui,sans-serif;box-shadow:0 1px 2px rgba(6,21,26,.06)}.ds-field input::placeholder{color:#66706C}.ds-field input:focus-visible{outline:2px solid #86652A;outline-offset:2px;border-color:#06151A}"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Pill filter with count; selected state is ink with a check icon.",
+      "html": "<div style=\"display:flex;gap:8px\"><button class=\"ds-chip\" aria-pressed=\"false\">Letovanja <span>128</span></button><button class=\"ds-chip\" aria-pressed=\"true\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" aria-hidden=\"true\"><path d=\"M5 12l5 5 9-10\"/></svg>Verski turizam <span>42</span></button></div>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid #828887;background:#FDFAF3;color:#06151A;font:700 .875rem/1 Manrope,system-ui,sans-serif;cursor:pointer}.ds-chip span{color:#66706C;font-variant-numeric:tabular-nums}.ds-chip:hover{background:#EFE8DA}.ds-chip[aria-pressed=\"true\"]{background:#06151A;border-color:#06151A;color:#F8F4EA}.ds-chip[aria-pressed=\"true\"] span{color:#B9BAB4}.ds-chip:focus-visible{outline:2px solid #86652A;outline-offset:2px}"
+    },
+    {
+      "name": "Ticket Card",
+      "kind": "card",
+      "refersTo": "ticket-card",
+      "description": "Boarding-pass offer card: stub, dashed perforation, serif title, price with basis, rotated stamp.",
+      "html": "<a class=\"ds-ticket\" href=\"#\"><span class=\"ds-ticket__stub\"><svg viewBox=\"0 0 64 64\" width=\"36\" height=\"36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.6\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 50h40M17 50V31l15-10 15 10v19M24 50V37h16v13M32 21v-9M27 15h10\"/></svg></span><span class=\"ds-ticket__body\"><small>VERSKI TURIZAM · GRČKA</small><strong>Sveta Gora i Meteori</strong><em>12. 6.–18. 6. 2026. · 7 dana · autobus</em><span class=\"ds-ticket__price\"><i>od</i> 590&nbsp;€ <b>po osobi</b></span></span><span class=\"ds-ticket__stamp\" aria-hidden=\"true\">RUTA<br><strong>BEG → ATO</strong><br>7 DANA</span></a>",
+      "css": ".ds-ticket{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;padding:20px 24px;background:#FDFAF3;color:#06151A;text-decoration:none;border-radius:8px;border:1px solid rgba(6,21,26,.12);box-shadow:0 28px 54px -44px rgba(6,21,26,.72);transition:transform .22s cubic-bezier(.22,1,.36,1)}.ds-ticket::before,.ds-ticket::after{content:\"\";position:absolute;left:104px;width:20px;height:20px;border-radius:999px;background:#F8F4EA}.ds-ticket::before{top:-10px}.ds-ticket::after{bottom:-10px}.ds-ticket:hover{transform:translateY(-2px)}.ds-ticket:focus-visible{outline:2px solid #86652A;outline-offset:2px}.ds-ticket__stub{display:grid;place-items:center;width:64px;height:64px;border:2px solid currentColor;border-radius:999px;color:#9B3A2E;margin-right:8px}.ds-ticket__body{display:grid;gap:4px;padding-left:20px;border-left:1px dashed rgba(6,21,26,.34)}.ds-ticket__body small{color:#0B6968;font:800 .75rem/1.2 Manrope,sans-serif;letter-spacing:.16em}.ds-ticket__body strong{font:500 1.75rem/1.12 \"Cormorant Garamond\",Georgia,serif;padding-block:.08em}.ds-ticket__body em{font:500 .875rem/1.55 Manrope,sans-serif;font-style:normal;color:#66706C}.ds-ticket__price{font:800 1.5rem/1.1 Manrope,sans-serif;font-variant-numeric:tabular-nums}.ds-ticket__price i,.ds-ticket__price b{font:500 .875rem Manrope,sans-serif;color:#66706C;font-style:normal}.ds-ticket__stamp{align-self:start;padding:6px 8px;border:1px solid rgba(155,58,46,.6);border-radius:6px;color:#9B3A2E;font:800 .75rem/1.3 Manrope,sans-serif;letter-spacing:.12em;text-align:center;transform:rotate(-3deg);transition:transform .42s cubic-bezier(.22,1,.36,1)}.ds-ticket:hover .ds-ticket__stamp{transform:rotate(-1deg)}"
+    },
+    {
+      "name": "Brass Number Plate",
+      "kind": "custom",
+      "refersTo": "number-plate",
+      "description": "Engraved brass plate numbering routes, steps and vehicles.",
+      "html": "<span class=\"ds-plate\" aria-hidden=\"true\">01</span>",
+      "css": ".ds-plate{display:inline-grid;place-items:center;width:56px;height:44px;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 6px,100% calc(100% - 6px),calc(100% - 6px) 100%,6px 100%,0 calc(100% - 6px),0 6px);background:linear-gradient(160deg,#E6C781 0%,#C9A157 55%,#A57E3A 100%);box-shadow:inset 0 1px 0 rgba(255,250,240,.55),inset 0 -1px 0 rgba(6,21,26,.35);color:#06151A;font:600 1.5rem/1 \"Cormorant Garamond\",Georgia,serif;font-variant-numeric:lining-nums tabular-nums;text-shadow:0 1px 0 rgba(255,250,240,.4)}"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Teal overline + Cormorant h2 with caron clearance + gold-ink text link.",
+      "html": "<div class=\"ds-head\"><div><p>ZAŠTO PUTNICI BIRAJU ABLUX</p><h2>Najtraženije rute</h2></div><a href=\"#\">Sve ponude →</a></div>",
+      "css": ".ds-head{display:flex;align-items:end;justify-content:space-between;gap:1.5rem;color:#06151A}.ds-head p{margin:0 0 1rem;color:#0B6968;font:800 .75rem/1.2 Manrope,sans-serif;letter-spacing:.16em}.ds-head h2{margin:0;font:400 clamp(2.45rem,4.25vw,4.25rem)/1.1 \"Cormorant Garamond\",Georgia,serif;padding-block:.08em;text-wrap:balance}.ds-head a{display:inline-flex;align-items:center;min-height:44px;padding:.75rem 1rem;border:1px solid rgba(6,21,26,.18);border-radius:8px;color:#86652A;font:800 .9rem/1 Manrope,sans-serif;text-decoration:none}.ds-head a:focus-visible{outline:2px solid #86652A;outline-offset:2px}"
+    },
+    {
+      "name": "Navigation Bar (scrolled)",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Paper nav at 82% with 12px blur, serif wordmark, uppercase Manrope links, inline 44px utilities.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav__mark\" href=\"#\"><strong>ABlux</strong><small>TRAVEL</small></a><ul><li><a href=\"#\" aria-current=\"page\">Početna</a></li><li><a href=\"#\">Ponude</a></li><li><a href=\"#\">Verski turizam</a></li><li><a href=\"#\">Rent a bus</a></li><li><a href=\"#\">Kontakt</a></li></ul><span class=\"ds-nav__util\"><button aria-label=\"Pretraga\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M20 20l-3.5-3.5\"/></svg></button><button>SR</button><button class=\"ds-nav__cta\">Prijava</button></span></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:24px;height:72px;padding:0 24px;background:rgba(248,244,234,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(6,21,26,.16);color:#06151A;font-family:Manrope,system-ui,sans-serif}.ds-nav__mark{display:grid;text-decoration:none;color:#06151A;line-height:.95}.ds-nav__mark strong{font:600 1.95rem/1 \"Cormorant Garamond\",Georgia,serif}.ds-nav__mark small{color:#86652A;font:700 .72rem/1 Manrope,sans-serif;letter-spacing:.38em}.ds-nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}.ds-nav ul a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;color:#06151A;font:700 .8rem/1 Manrope,sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid transparent}.ds-nav ul a[aria-current]{color:#86652A;border-bottom-color:#86652A}.ds-nav ul a:hover{border-bottom-color:rgba(6,21,26,.34)}.ds-nav a:focus-visible,.ds-nav button:focus-visible{outline:2px solid #86652A;outline-offset:2px}.ds-nav__util{display:flex;gap:4px;margin-left:auto}.ds-nav__util button{display:inline-grid;place-items:center;min-width:44px;min-height:44px;border:0;border-radius:999px;background:transparent;color:#06151A;font:700 .8rem Manrope,sans-serif;cursor:pointer}.ds-nav__util .ds-nav__cta{padding:0 16px;background:linear-gradient(135deg,#D5A54F,#B99146);color:#06151A;font-weight:800}"
+    },
+    {
+      "name": "Admin Status Light",
+      "kind": "custom",
+      "refersTo": "status-light",
+      "description": "Operate-mode status: dot plus text label, never color alone.",
+      "html": "<div style=\"display:flex;gap:8px;flex-wrap:wrap\"><span class=\"ds-status ds-status--ok\">Aktivno</span><span class=\"ds-status ds-status--warn\">Upozorenje</span><span class=\"ds-status ds-status--err\">Greška</span><span class=\"ds-status ds-status--off\">Isključeno</span></div>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 8px;border-radius:6px;background:#EFE8DA;color:#06151A;font:600 .8125rem/1 Manrope,system-ui,sans-serif}.ds-status::before{content:\"\";width:8px;height:8px;border-radius:999px;background:currentColor}.ds-status--ok::before{background:#0E7C7B}.ds-status--warn::before{background:#C28A2C}.ds-status--err::before{background:#9B3A2E}.ds-status--off::before{background:#9A9384}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Putni dnevnik (The Travel Journal)",
+    "overview": "Every surface is a page from a well-kept travel journal: warm paper, ink-dark photographs, a gold word underlined by hand, and the small ephemera of a trip pressed between the pages: boarding-pass tickets, postcards with deckled edges, rubber stamps, brass number plates, and dashed routes pinned on an old map. The mood is calm, certain, and hospitable. It should look quietly lavish, never loud, and meticulous enough that an older pilgrim, a parent booking a summer holiday, and a parish organizer can all trust the page at a glance.\n\nDensity is comfortable on public pages: generous paper margins, one idea per section, a dense block always followed by a quiet one. Hierarchy comes from two things only: a large old-style serif against a clear humanist sans, and the inversion between paper grounds and ink panels (the hero, the vehicle panel, the footer). Ornament is real but restrained. Stamps, perforations, pins, and routes carry meaning (a route, a step, a status), and they never compete with the offer, the price, or the action.\n\nThe confirmed anti-reference is the old \"SaaS glass\" look still visible in `design/reference/old_admin_dashboard.png` and `design/reference/old_ponude_page.png`: navy panels (`#071226`, `#12233f`), neon blue and cyan gradients (`#155eef`, `#5ea4ff`, `#67e8f9`, `rgba(0,255,200,…)`), glassmorphism cards with glowing underlines, and Sora headings. It must disappear everywhere, including the footer, the nav, the focus ring, and the whole admin.",
+    "keyCharacteristics": [
+      "Paper ground (`paper`) with ink text (`ink`). Gold is for the primary action and one italic emphasis word per heading. Teal and brick are for meaning (route, status, step), not decoration.",
+      "Cormorant Garamond for display and headings on public pages. Manrope for everything else. The admin uses Manrope only.",
+      "Signature objects: ticket card, postcard, stamp, brass number plate, dashed route with pins.",
+      "Light theme \"Papir\" is the default. Dark theme \"Tinta\" is an ink desk where paper objects stay paper.",
+      "Calm motion (GSAP, transform and opacity only). One signature scroll moment per page, and all of it can be switched off."
+    ],
+    "rules": [
+      {
+        "name": "The Gold Is Earned Rule",
+        "body": "Gold fills belong to the single primary action in view, and gold text belongs to one italic emphasis word per heading. `gold` and `gold-2` are never used as small text on paper. Use `gold-ink`.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Navy Rule",
+        "body": "No blue-black grounds, no blue or cyan accents, no neon gradients, no glowing underlines. Ink (`#06151A`) is the only dark, and it is green-black. This applies to the footer, the nav, focus rings, admin, and emails alike.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Objects Rule",
+        "body": "Tickets, postcards, stamps, and documents are paper in both themes. Only the desk they lie on changes color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Caron Clearance Rule",
+        "body": "Cormorant headings use a line-height of at least 1.1 and `padding-block: 0.08em` (0.12em for display). No `overflow: hidden` or `clip` sits tightly around display text; if a parent must clip (image cards, tickets), the text box keeps at least 0.15em of top padding inside it. Never use `background-clip: text` or tight `line-clamp` on serif headings. If a test string still clips or collides at 1.1, fix the metrics (`text-box`, padding), not the copy. Replace the display face only if the glyph test fails in every weight.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Serif Voice Rule",
+        "body": "Serif is for things you read as a headline: display, headlines, route and offer titles, plate numerals. Labels, buttons, prices, data, forms, and anything in the admin are Manrope.",
+        "section": "typography"
+      },
+      {
+        "name": "The 16px Floor Rule",
+        "body": "Running text is 1rem or larger at every breakpoint. Nothing readable is smaller than 0.75rem.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper Stack Rule",
+        "body": "Depth means paper lying on paper, or paper on an ink desk. No glass panels, no `backdrop-filter` on cards or sections. Backdrop blur is allowed only on the scrolled nav (12px at 82% opacity) and on the ghost button over hero imagery (`blur(10px)`, as built).",
+        "section": "elevation"
+      },
+      {
+        "name": "The Flat At Rest Rule",
+        "body": "Shadows at rest are the as-built soft drops above. Stronger elevation is earned by state (hover, open, modal), never by decoration.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use `paper` (#F8F4EA) as the default ground and `ink` (#06151A) for text, with Papir as the stored default theme.",
+      "Do put ink text (#06151A) on gold buttons; the gradient `#D5A54F → #B99146` with ink passes at 8.25:1 and 6.37:1.",
+      "Do use `gold-ink` (#86652A) for any gold text smaller than 24px on paper, and for the focus ring on paper.",
+      "Do set every Cormorant heading at line-height ≥ 1.1 with `padding-block: 0.08em`, and check the diacritic test strings before shipping.",
+      "Do keep running text at 1rem or larger on mobile and all touch targets at 44×44px or larger.",
+      "Do show every price as \"od X €\" plus its basis (\"po osobi\", \"po apartmanu\", \"ukupno za 2 osobe\"), with the NBS note on detail pages, and \"Organizator\" plus \"Licenca\" on partner offers.",
+      "Do build motion with `useGSAP` and `gsap.matchMedia()`, animating only `transform` and `opacity` with `power3.out`.",
+      "Do keep tickets, postcards, and stamps paper-colored in Tinta.",
+      "Do use real ABLux photos for vehicles, team, interiors, and trips, moved only by code (slow zoom, parallax, warm-grade overlay).",
+      "Do read contact data and the license number from `settings`, and hide empty fields."
+    ],
+    "donts": [
+      "Don't use navy grounds, blue or cyan accents, neon gradients, glowing borders, or glass cards anywhere (the old `#071226`, `#12233f`, `#155eef`, `#5ea4ff`, `#67e8f9` system), including the footer, the nav, the focus ring, and the admin.",
+      "Don't use Sora, or Georgia as a primary face; the serif is Cormorant Garamond and everything else is Manrope.",
+      "Don't put `gold` (#B99146) or `gold-2` (#D5A54F) text on paper at body sizes, or light text (#FFF9EC) on gold fills.",
+      "Don't set Cormorant display text at line-height below 1.1, or wrap it in a tight `overflow: hidden`, in a way that clips carons on č, ž, š.",
+      "Don't animate `filter`, `width`, `height`, `top`, or `left`; don't use bounce or overshoot easing; don't ship motion that `prefers-reduced-motion` cannot turn off.",
+      "Don't call `.play()` on a video that is scrubbed by ScrollTrigger.",
+      "Don't alter real vehicle, interior, team, or trip photos with AI, and don't use `pocetna*.avif`, `kontakt-hero.avif`, `plane.avif`, or `background*.avif` in new work.",
+      "Don't invent testimonials, traveler counts, ratings, awards, license numbers, or scarcity (\"Još samo 2 mesta!\") that the data does not support.",
+      "Don't use emojis, exclamation marks, or hype words in UI copy, or mix informal \"ti\" into sentences.",
+      "Don't render the placeholder contacts (`+381 11 123 45 67`, \"Bulevar Putnika 22\", `info@abluxtravel2022.rs`).",
+      "Don't use Cormorant, textures, stamps, or entrance animations in the admin."
+    ]
+  }
+}

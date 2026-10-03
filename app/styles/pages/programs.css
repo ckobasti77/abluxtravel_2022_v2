@@ -1,0 +1,449 @@
+/* Step 12: ABLux programs (/aranzmani, /aranzmani/[slug]). Detail reuses the offer-* template from catalog.css. */
+
+/* ───────── List ───────── */
+
+.prg-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}
+
+.prg-head__staff {
+  flex: none;
+}
+
+.prg-list {
+  display: grid;
+  gap: 1.1rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.prg-empty {
+  margin-top: 2rem;
+}
+
+.prg-past {
+  display: grid;
+  gap: 0;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--ablux-line);
+  list-style: none;
+}
+
+.prg-past li {
+  border-bottom: 1px solid var(--ablux-line);
+}
+
+.prg-past__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1.5rem;
+  min-height: 3.25rem;
+  padding: 0.75rem 0.25rem;
+  color: var(--ablux-text);
+  text-decoration: none;
+}
+
+.prg-past__link:hover .prg-past__title {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.prg-past__title {
+  font-family: var(--ablux-editorial);
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.prg-past__meta {
+  color: var(--ablux-text-muted);
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.prg-more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+}
+
+.prg-more__title {
+  margin: 0;
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  padding-block: 0.06em;
+}
+
+.prg-more__body {
+  max-width: 44rem;
+  margin: 0.6rem 0 0;
+  color: var(--ablux-c-muted);
+  line-height: 1.6;
+}
+
+.prg-more__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ───────── Detail ───────── */
+
+.prg-section-intro {
+  max-width: 62ch;
+  margin: -0.4rem 0 1.25rem;
+  color: var(--ablux-text-muted);
+  line-height: 1.6;
+}
+
+.prg-gallery {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(16rem, 1fr);
+  gap: 0.9rem;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0 0 0.5rem;
+  list-style: none;
+  scroll-snap-type: x mandatory;
+}
+
+.prg-gallery li {
+  scroll-snap-align: start;
+}
+
+.prg-gallery__media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-surface-2);
+}
+
+.prg-dest-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.prg-dest-chip {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--ablux-line-field);
+  border-radius: 999px;
+  background: var(--ablux-surface);
+  color: var(--ablux-text);
+  padding: 0.35rem 1rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.prg-dest-chip:hover {
+  background: var(--ablux-surface-2);
+}
+
+.prg-dest-chip.is-active {
+  border-color: var(--ablux-selected-bg);
+  background: var(--ablux-selected-bg);
+  color: var(--ablux-selected-fg);
+}
+
+.prg-dest-chip__price .ui-price {
+  font-size: 0.875rem;
+}
+
+.prg-dest-chip.is-active .prg-dest-chip__price * {
+  color: inherit;
+}
+
+.prg-dest {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  box-shadow: var(--ablux-shadow-card);
+}
+
+.prg-dest__media {
+  position: relative;
+  min-height: 18rem;
+  background: var(--ablux-c-paper-2);
+}
+
+.prg-dest__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prg-dest__placeholder {
+  display: grid;
+  height: 100%;
+  min-height: 18rem;
+  place-content: center;
+  justify-items: center;
+  gap: 0.75rem;
+  max-width: 26rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  color: var(--ablux-c-muted);
+  text-align: center;
+}
+
+.prg-dest__body {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.prg-dest__title,
+.prg-acc__title {
+  margin: 0;
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.5rem, 2.2vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.15;
+  padding-block: 0.06em;
+}
+
+.prg-dest__text {
+  margin: 0;
+  color: var(--ablux-c-muted);
+  line-height: 1.65;
+}
+
+.prg-dest__note {
+  margin: 0;
+  border-top: 1px dashed var(--ablux-line-strong);
+  padding-top: 0.6rem;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.prg-dest__actions,
+.prg-acc__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-top: 0.4rem;
+}
+
+.prg-dest__thumbs {
+  display: flex;
+  grid-column: 1 / -1;
+  gap: 0.5rem;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0.75rem;
+  list-style: none;
+  border-top: 1px dashed rgba(6, 21, 26, 0.24);
+}
+
+.prg-dest__thumbs img {
+  display: block;
+  height: 5.5rem;
+  width: auto;
+  border-radius: 4px;
+}
+
+.prg-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  margin: 0;
+  padding: 0;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.9375rem;
+  list-style: none;
+}
+
+.prg-meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.prg-meta svg {
+  color: var(--ablux-c-teal-ink);
+}
+
+.prg-acc-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.prg-acc {
+  overflow: hidden;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  box-shadow: var(--ablux-shadow-card);
+}
+
+.prg-acc__media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--ablux-c-paper-2);
+}
+
+.prg-acc__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ablux-ease);
+}
+
+.prg-acc:hover .prg-acc__media img {
+  transform: scale(1.04);
+}
+
+.prg-acc__body {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1.1rem 1.25rem 1.3rem;
+}
+
+.prg-acc__more {
+  display: grid;
+  gap: 0.75rem;
+  border-top: 1px dashed rgba(6, 21, 26, 0.24);
+  padding-top: 0.9rem;
+}
+
+.prg-acc__more p {
+  margin: 0;
+  color: var(--ablux-c-muted);
+  line-height: 1.6;
+}
+
+.prg-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.prg-tags li {
+  border: 1px solid rgba(6, 21, 26, 0.18);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.875rem;
+}
+
+/* Day-by-day program on a dashed route with pins. */
+.prg-days {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  list-style: none;
+}
+
+.prg-days::before {
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: 0.32rem;
+  content: "";
+  border-left: 2px dashed rgba(155, 58, 46, 0.42);
+}
+
+.prg-day {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.prg-day::before {
+  position: absolute;
+  top: 0.3rem;
+  left: -1.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  content: "";
+  border-radius: 50%;
+  background: var(--ablux-brick);
+  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--ablux-brick) 16%, transparent);
+}
+
+.prg-day__pin {
+  color: var(--ablux-brick);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.prg-day__date {
+  margin: 0 0 0.25rem;
+  color: var(--ablux-text-muted);
+  font-size: 0.875rem;
+}
+
+.prg-day__text {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.prg-panel__selected {
+  margin: 0.5rem 0;
+  font-size: 0.9375rem;
+}
+
+.prg-panel__cart {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .prg-dest {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .prg-day {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prg-acc__media img {
+    transition: none;
+  }
+}

@@ -1,0 +1,394 @@
+/* Step 12: auth page (see app/styles/pages.css for the shared frame). */
+
+.auth-desk {
+  display: grid;
+  min-height: calc(100svh - 4rem);
+  justify-items: center;
+  align-content: center;
+  gap: 1.25rem;
+  padding: calc(var(--snav-h, 72px) + clamp(1.5rem, 5vh, 3.5rem)) 1rem clamp(2rem, 5vh, 3.5rem);
+}
+
+/* A single paper sheet lying on the desk (stays paper in Tinta). */
+.auth-sheet {
+  position: relative;
+  width: min(100%, 31rem);
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), transparent 40%),
+    var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  padding: clamp(1.5rem, 4.5vw, 2.5rem);
+  box-shadow: var(--ablux-shadow-card), 0 1px 0 rgba(6, 21, 26, 0.04);
+}
+
+[data-theme="dark"] .auth-sheet {
+  box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.85);
+}
+
+.auth-sheet__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.auth-brand {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--ablux-c-ink);
+  text-decoration: none;
+}
+
+.auth-brand__logo {
+  width: auto;
+  height: 2.6rem;
+}
+
+.auth-brand__wordmark {
+  display: grid;
+  line-height: 1;
+}
+
+.auth-brand__wordmark strong {
+  font-family: var(--ablux-editorial);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.auth-brand__wordmark small {
+  margin-top: 0.15rem;
+  color: var(--ablux-c-gold-ink);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+}
+
+.auth-sheet__stamp {
+  flex: none;
+  margin: -0.25rem -0.25rem 0 0;
+  opacity: 0.78;
+  transform: rotate(-9deg) scale(0.86);
+  transform-origin: top right;
+}
+
+.auth-sheet__overline {
+  margin: 1.75rem 0 0;
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.auth-sheet__title {
+  margin: 0.5rem 0 0;
+  color: var(--ablux-c-ink);
+  font-family: var(--ablux-editorial);
+  font-size: clamp(2.1rem, 6vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.1;
+  padding-block: 0.1em;
+  text-wrap: balance;
+}
+
+.auth-sheet__title em {
+  color: var(--ablux-c-gold-ink);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.auth-sheet__intro {
+  margin: 0.5rem 0 0;
+  color: var(--ablux-c-muted-strong);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Perforation, like the tear line of a ticket. */
+.auth-sheet__perf {
+  position: relative;
+  height: 0;
+  margin: 1.5rem calc(-1 * clamp(1.5rem, 4.5vw, 2.5rem));
+  border: 0;
+  border-top: 2px dashed rgba(6, 21, 26, 0.16);
+  overflow: visible;
+}
+
+.auth-sheet__perf::before,
+.auth-sheet__perf::after {
+  position: absolute;
+  top: -0.7rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background: var(--ablux-bg);
+  content: "";
+}
+
+.auth-sheet__perf::before {
+  left: -0.7rem;
+}
+
+.auth-sheet__perf::after {
+  right: -0.7rem;
+}
+
+/* The sheet resets tokens to Papir (.ui-paper); the notches show the desk behind it. */
+[data-theme="dark"] .auth-sheet__perf::before,
+[data-theme="dark"] .auth-sheet__perf::after {
+  background: var(--ablux-c-ink);
+}
+
+/* ───────────────────────── Mode switch ───────────────────────── */
+
+.auth-modes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
+  border: 1px solid var(--ablux-line);
+  border-radius: var(--ablux-radius-field);
+  background: var(--ablux-c-paper-2);
+  padding: 0.25rem;
+}
+
+.auth-modes__btn {
+  min-height: 2.75rem;
+  border: 0;
+  border-radius: calc(var(--ablux-radius-field) - 3px);
+  background: transparent;
+  color: var(--ablux-c-muted-strong);
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background-color var(--ablux-dur-micro) var(--ablux-ease),
+    color var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+.auth-modes__btn:hover {
+  color: var(--ablux-c-ink);
+}
+
+.auth-modes__btn.is-active {
+  background: var(--ablux-c-ink);
+  color: var(--ablux-c-paper);
+}
+
+.auth-modes__btn:focus-visible,
+.auth-switch__btn:focus-visible,
+.auth-password__toggle:focus-visible,
+.auth-brand:focus-visible,
+.auth-links a:focus-visible {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: 2px;
+}
+
+.auth-next {
+  margin: 1rem 0 0;
+  border-left: 2px solid var(--ablux-c-teal);
+  padding: 0.15rem 0 0.15rem 0.75rem;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+/* ───────────────────────── Form ───────────────────────── */
+
+.auth-form {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 1.4rem;
+}
+
+.auth-form__split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.auth-password {
+  position: relative;
+}
+
+.auth-password .auth-password__input {
+  padding-right: 3.25rem;
+}
+
+.auth-password__toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.15rem;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 0;
+  border-radius: var(--ablux-radius-field);
+  background: transparent;
+  color: var(--ablux-c-muted-strong);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.auth-password__toggle:hover {
+  color: var(--ablux-c-ink);
+}
+
+.auth-password__toggle svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.auth-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0;
+  border: 1px solid rgba(155, 58, 46, 0.35);
+  border-radius: var(--ablux-radius-stamp);
+  background: rgba(155, 58, 46, 0.08);
+  padding: 0.7rem 0.85rem;
+  color: var(--ablux-c-brick);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.auth-notice svg {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.1rem;
+}
+
+.auth-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0.35rem;
+  margin: 1rem 0 0;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.9375rem;
+}
+
+.auth-switch__btn {
+  min-height: 2.75rem;
+  border: 0;
+  background: transparent;
+  padding: 0 0.25rem;
+  color: var(--ablux-c-teal-ink);
+  font: inherit;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgba(11, 105, 104, 0.35);
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+.auth-switch__btn:hover {
+  text-decoration-color: currentColor;
+}
+
+/* ───────────────────────── Signed-in state ───────────────────────── */
+
+.auth-session__label {
+  margin: 0;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.auth-session__name {
+  margin: 0.25rem 0 0;
+  color: var(--ablux-c-ink);
+  font-family: var(--ablux-editorial);
+  font-size: 1.9rem;
+  line-height: 1.15;
+  padding-block: 0.06em;
+  overflow-wrap: anywhere;
+}
+
+.auth-session__email {
+  margin: 0.15rem 0 0;
+  color: var(--ablux-c-muted-strong);
+  overflow-wrap: anywhere;
+}
+
+.auth-session__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.9rem;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.9375rem;
+}
+
+.auth-session__meta .ui-badge svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.auth-session__actions {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+/* ───────────────────────── Links under the sheet ───────────────────────── */
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--ablux-text-muted);
+  font-size: 0.9375rem;
+}
+
+.auth-links a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0 0.5rem;
+  color: var(--ablux-text-muted-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-links a:hover {
+  color: var(--ablux-text);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 479px) {
+  .auth-desk {
+    padding-inline: 0.75rem;
+  }
+
+  .auth-form__split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .auth-brand__wordmark strong {
+    font-size: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .auth-modes__btn {
+    transition: none;
+  }
+}
+
+.pg.auth {
+  padding-bottom: 0;
+}

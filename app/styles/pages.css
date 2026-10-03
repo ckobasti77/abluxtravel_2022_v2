@@ -1,0 +1,323 @@
+/*
+ * Public pages in the "putni dnevnik" style (step 12): shared page frame and hero.
+ * Page-specific rules live in app/styles/pages/*.css (imported from app/globals.css).
+ * Theme tokens only (Papir and Tinta); paper objects stay paper via .ui-paper.
+ */
+
+.pg {
+  /* Content column shares its left edge with the hero copy (.pg-hero__inner inline padding). */
+  --pg-container: min(100% - 2 * clamp(1.25rem, 5vw, 5.4rem), 85.2rem);
+  --pg-section-y: clamp(3.5rem, 7vw, 6rem);
+  position: relative;
+  overflow: clip;
+  padding-bottom: var(--pg-section-y);
+  background:
+    url("/generated/ablux-paper-route-texture.png") center top / 100% auto repeat-y,
+    var(--ablux-bg);
+  color: var(--ablux-text);
+}
+
+[data-theme="dark"] .pg {
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(213, 165, 79, 0.05), transparent 55%),
+    repeating-linear-gradient(0deg, rgba(215, 226, 223, 0.025) 0 1px, transparent 1px 6rem),
+    var(--ablux-bg);
+}
+
+.pg-container {
+  width: var(--pg-container);
+  margin-inline: auto;
+}
+
+.pg-section {
+  width: var(--pg-container);
+  margin-inline: auto;
+  padding-top: var(--pg-section-y);
+}
+
+.pg-section--tight {
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+
+.pg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pg-list {
+  display: grid;
+  gap: 1.1rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pg-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.pg-prose {
+  max-width: 68ch;
+  color: var(--ablux-text);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.pg-prose p {
+  margin: 0 0 1rem;
+}
+
+.pg-muted {
+  color: var(--ablux-text-muted);
+}
+
+.pg-empty {
+  margin-top: 2rem;
+  border: 1px dashed var(--ablux-line-strong);
+  border-radius: var(--ablux-radius-card);
+  padding: 1.5rem;
+}
+
+.pg-empty p {
+  max-width: 44rem;
+  margin: 0;
+  color: var(--ablux-text-muted);
+  line-height: 1.6;
+}
+
+.pg-empty__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Paper panel (a sheet lying on the desk). */
+.pg-panel {
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: var(--ablux-shadow-card);
+}
+
+/* ───────────────────────── Page hero ───────────────────────── */
+
+.pg-hero {
+  --ablux-focus: var(--ablux-c-gold-2);
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: clamp(26rem, 56svh, 36rem);
+  overflow: hidden;
+  background: var(--ablux-c-ink);
+  color: var(--ablux-c-paper-edge);
+}
+
+.pg-hero--lg {
+  min-height: clamp(32rem, 72svh, 46rem);
+}
+
+.pg-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.pg-hero__media picture,
+.pg-hero__media img,
+.pg-hero__media video,
+.pg-hero__media > .ablux-scene-media {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pg-hero__media img {
+  animation: pg-hero-zoom 20s var(--ablux-ease) infinite alternate;
+}
+
+@keyframes pg-hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.pg-hero__shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(6, 21, 26, 0.94) 0%, rgba(6, 21, 26, 0.84) 34%, rgba(6, 21, 26, 0.45) 56%, rgba(6, 21, 26, 0.12) 78%),
+    linear-gradient(180deg, rgba(2, 10, 12, 0.5) 0%, rgba(2, 10, 12, 0) 26%, rgba(2, 10, 12, 0) 70%, rgba(2, 10, 12, 0.55) 100%);
+}
+
+.pg-hero__inner {
+  display: grid;
+  width: min(100%, 96rem);
+  margin: 0 auto;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: end;
+  gap: 2rem;
+  padding: clamp(6rem, 13vh, 8rem) clamp(1.25rem, 5vw, 5.4rem) clamp(2rem, 5vh, 3.5rem);
+}
+
+.pg-hero--aside .pg-hero__inner {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+}
+
+.pg-hero__copy {
+  max-width: 46rem;
+}
+
+.pg-crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  color: rgba(255, 250, 240, 0.74);
+  font-size: 0.875rem;
+  list-style: none;
+}
+
+/* Every item shares the 44px row of the links, so plain text and "/" sit on the same line. */
+.pg-crumbs li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.pg-crumbs li + li::before {
+  content: "/";
+  margin-right: 0.5rem;
+  color: rgba(255, 250, 240, 0.4);
+}
+
+.pg-crumbs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--ablux-c-paper-edge);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(213, 165, 79, 0.5);
+  text-underline-offset: 0.2em;
+}
+
+.pg-hero__overline {
+  margin: 0 0 0.9rem;
+  color: var(--ablux-c-gold-2);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pg-hero__title {
+  margin: 0;
+  color: var(--ablux-c-paper-edge);
+  font-family: var(--ablux-editorial);
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  padding-block: 0.12em;
+  text-wrap: balance;
+}
+
+.pg-hero__title em {
+  color: var(--ablux-c-gold-2);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.pg-hero__intro {
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  color: rgba(255, 250, 240, 0.88);
+  font-size: clamp(1.0625rem, 1.6vw, 1.3rem);
+  line-height: 1.55;
+  text-shadow: 0 1px 14px rgba(2, 10, 12, 0.5);
+}
+
+.pg-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.pg-hero__aside {
+  justify-self: end;
+  width: min(100%, 24rem);
+}
+
+/* Facts row under the hero copy ("17 agencija · 322 ponude"). */
+.pg-hero__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(255, 250, 240, 0.82);
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pg-hero__facts strong {
+  color: var(--ablux-c-gold-2);
+  font-weight: 800;
+}
+
+@media (max-width: 1023px) {
+  .pg-hero--aside .pg-hero__inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pg-hero__aside {
+    display: none;
+  }
+
+  .pg-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .pg-hero {
+    min-height: clamp(30rem, 82svh, 40rem);
+  }
+
+  .pg-hero__shade {
+    background: linear-gradient(180deg, rgba(6, 21, 26, 0.55) 0%, rgba(6, 21, 26, 0.35) 30%, rgba(6, 21, 26, 0.82) 62%, rgba(6, 21, 26, 0.96) 100%);
+  }
+
+  .pg-hero__inner {
+    padding: 5.5rem 1.25rem 2rem;
+  }
+
+  .pg-hero__actions > * {
+    flex: 1 1 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pg-hero__media img {
+    animation: none;
+  }
+}

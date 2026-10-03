@@ -1,0 +1,614 @@
+/* Step 12: about page (see app/styles/pages.css for the shared frame). */
+
+.abt {
+  /* PartnerStrip (components/home) sizes itself with the homepage variables. */
+  --home-container: var(--pg-container);
+  --home-section-y: var(--pg-section-y);
+}
+
+.pg.abt {
+  padding-bottom: 0;
+}
+
+.abt .ui-section-heading__title {
+  line-height: 1.1;
+  padding-block: 0.08em;
+}
+
+/* ───────────────────────── Ko smo: priča + putni list ───────────────────────── */
+
+.abt-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.abt-story__prose {
+  margin-top: 1.5rem;
+  font-size: 1.0625rem;
+}
+
+.abt-record {
+  position: relative;
+  margin-top: 0.5rem;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background:
+    repeating-linear-gradient(180deg, transparent 0 2.4rem, rgba(6, 21, 26, 0.05) 2.4rem calc(2.4rem + 1px)),
+    var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  padding: clamp(1.4rem, 3vw, 2rem);
+  box-shadow: var(--ablux-shadow-card);
+  transform: rotate(0.6deg);
+}
+
+.abt-record__title {
+  margin: 0;
+  padding-right: 6rem;
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.abt-record__rows {
+  display: grid;
+  gap: 0.15rem;
+  margin: 1.25rem 0 0;
+}
+
+.abt-record__row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.55rem 0;
+}
+
+.abt-record__row dt {
+  flex: none;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+
+.abt-record__row dd {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0;
+  color: var(--ablux-c-ink);
+  font-family: var(--ablux-editorial);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.abt-record__row dd::before {
+  flex: 1;
+  min-width: 1rem;
+  border-bottom: 1px dotted rgba(6, 21, 26, 0.35);
+  content: "";
+  transform: translateY(-0.3em);
+}
+
+.abt-record__route.ui-route {
+  margin-top: 0.75rem;
+}
+
+.abt-record__stamp {
+  position: absolute;
+  top: -1.1rem;
+  right: 1.1rem;
+  transform: rotate(-9deg);
+}
+
+/* ───────────────────────── Čime se bavimo ───────────────────────── */
+
+.abt-work__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.abt-work__item {
+  min-width: 0;
+}
+
+.abt-work__card {
+  position: relative;
+  display: flex;
+  height: 100%;
+  min-height: 17rem;
+  flex-direction: column;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  padding: 1.5rem 1.4rem 1.25rem;
+  text-decoration: none;
+  box-shadow: var(--ablux-shadow-low);
+  transition:
+    transform var(--ablux-dur-micro) var(--ablux-ease),
+    box-shadow var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+.abt-work__card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--ablux-shadow-medium);
+}
+
+.abt-work__glyph {
+  display: grid;
+  width: 3.25rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  color: var(--ablux-c-teal-ink);
+}
+
+.abt-work__glyph svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.abt-work__plate {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.25rem;
+}
+
+.abt-work__title {
+  margin: 1.1rem 0 0;
+  color: var(--ablux-c-ink);
+  font-family: var(--ablux-editorial);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.abt-work__body {
+  margin: 0.6rem 0 0;
+  color: var(--ablux-c-muted-strong);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.abt-work__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 1.1rem;
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.9375rem;
+  font-weight: 800;
+}
+
+.abt-work__more svg {
+  width: 1rem;
+  height: 1rem;
+  transition: transform var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+.abt-work__card:hover .abt-work__more svg {
+  transform: translateX(3px);
+}
+
+/* ───────────────────────── Vrednosti ───────────────────────── */
+
+.abt-values__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 2.25rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--ablux-line);
+  list-style: none;
+}
+
+.abt-value {
+  padding: 1.75rem 1.5rem 0.5rem 0;
+}
+
+.abt-value + .abt-value {
+  border-left: 1px dashed var(--ablux-line-strong);
+  padding-left: 1.5rem;
+}
+
+.abt-value__icon {
+  display: grid;
+  width: 2.75rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1.5px solid var(--ablux-teal);
+  border-radius: 50%;
+  color: var(--ablux-teal);
+}
+
+.abt-value__icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.abt-value h3 {
+  margin: 1rem 0 0;
+  color: var(--ablux-text);
+  font-family: var(--ablux-editorial);
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.abt-value h3::after {
+  display: block;
+  width: 2rem;
+  height: 1px;
+  margin-top: 0.7rem;
+  content: "";
+  background: var(--ablux-accent);
+}
+
+.abt-value p {
+  margin: 0.75rem 0 0;
+  color: var(--ablux-text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* ───────────────────────── Kako radimo ───────────────────────── */
+
+.abt-process__rail {
+  margin-top: 1.5rem;
+}
+
+.abt-process__route.ui-route {
+  color: var(--ablux-brick);
+}
+
+.abt-process__steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: -0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.abt-step {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  padding: 0 0.75rem;
+  text-align: center;
+}
+
+.abt-step__icon {
+  display: grid;
+  width: 3rem;
+  aspect-ratio: 1;
+  place-items: center;
+  margin-top: 1rem;
+  color: var(--ablux-teal);
+}
+
+.abt-step__icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.abt-step h3 {
+  margin: 0.5rem 0 0;
+  color: var(--ablux-text);
+  font-family: var(--ablux-editorial);
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.abt-step p {
+  max-width: 18rem;
+  margin: 0.6rem 0 0;
+  color: var(--ablux-text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ───────────────────────── Tim ───────────────────────── */
+
+.abt-team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 19rem));
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.abt-member {
+  min-width: 0;
+}
+
+.abt-member__frame {
+  height: 100%;
+  margin: 0;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: 4px;
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  padding: 0.85rem 0.85rem 1.25rem;
+  filter: var(--ablux-postcard-shadow);
+  transform: rotate(-0.8deg);
+}
+
+.abt-member:nth-child(2) .abt-member__frame {
+  transform: rotate(0.6deg) translateY(0.75rem);
+}
+
+.abt-member:nth-child(3) .abt-member__frame {
+  transform: rotate(-0.4deg);
+}
+
+.abt-member__photo {
+  position: relative;
+  display: grid;
+  aspect-ratio: 4 / 5;
+  place-items: center;
+  align-content: center;
+  gap: 1rem;
+  overflow: hidden;
+  border: 1px dashed rgba(6, 21, 26, 0.3);
+  border-radius: 2px;
+  background:
+    repeating-linear-gradient(135deg, rgba(6, 21, 26, 0.035) 0 1px, transparent 1px 11px),
+    var(--ablux-c-paper-2);
+}
+
+.abt-member__engrave {
+  position: relative;
+  display: grid;
+  width: 7rem;
+  aspect-ratio: 1;
+  place-items: center;
+}
+
+.abt-member__compass {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--ablux-c-gold-ink);
+  opacity: 0.32;
+}
+
+.abt-member__camera {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--ablux-c-teal-deep);
+}
+
+.abt-member__soon {
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.abt-member__caption {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 0.35rem 0;
+}
+
+.abt-member__caption strong {
+  color: var(--ablux-c-ink);
+  font-family: var(--ablux-editorial);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.abt-member__caption span {
+  color: var(--ablux-c-muted-strong);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* ───────────────────────── Završni poziv ───────────────────────── */
+
+.abt-closing {
+  --ablux-focus: var(--ablux-c-gold-2);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(215, 226, 223, 0.18);
+  border-radius: var(--ablux-radius-card);
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(213, 165, 79, 0.12), transparent 55%),
+    var(--ablux-c-ink-2);
+  color: var(--ablux-c-paper-edge);
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.4rem, 5vw, 4.5rem);
+  box-shadow: var(--ablux-shadow-panel);
+}
+
+.abt-closing__body {
+  position: relative;
+  max-width: 40rem;
+}
+
+.abt-closing__place {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--ablux-c-gold-2);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.abt-closing__place svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.abt-closing h2 {
+  margin: 0.8rem 0 0;
+  color: var(--ablux-c-paper-edge);
+  font-family: var(--ablux-editorial);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  padding-block: 0.08em;
+  text-wrap: balance;
+}
+
+.abt-closing__text {
+  margin: 0.9rem 0 0;
+  color: rgba(255, 250, 240, 0.82);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.abt-closing__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.abt-closing__stamp {
+  position: absolute;
+  top: 50%;
+  right: clamp(2rem, 8vw, 7rem);
+  transform: translateY(-50%) rotate(-10deg) scale(1.35);
+}
+
+.abt-dock {
+  display: block;
+  margin-top: 2rem;
+}
+
+/* ───────────────────────── Responsive ───────────────────────── */
+
+@media (max-width: 1180px) {
+  .abt-work__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .abt-values__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .abt-value:nth-child(3) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .abt-value:nth-child(n + 3) {
+    border-top: 1px dashed var(--ablux-line-strong);
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .abt-story {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .abt-record {
+    max-width: 34rem;
+    margin-top: 1rem;
+  }
+
+  .abt-process__route.ui-route {
+    display: none;
+  }
+
+  .abt-process__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .abt-closing__stamp {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .abt-story__prose {
+    font-size: 1rem;
+  }
+
+  .abt-work__grid,
+  .abt-values__list,
+  .abt-team__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .abt-work__card {
+    min-height: 0;
+  }
+
+  .abt-value,
+  .abt-value + .abt-value,
+  .abt-value:nth-child(3) {
+    border-left: 0;
+    padding: 1.5rem 0 0;
+  }
+
+  .abt-value + .abt-value {
+    border-top: 1px dashed var(--ablux-line-strong);
+    margin-top: 1.25rem;
+  }
+
+  .abt-process__steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    border-left: 2px dashed color-mix(in srgb, var(--ablux-brick) 40%, transparent);
+    padding-left: 1.25rem;
+  }
+
+  .abt-step {
+    justify-items: start;
+    padding: 0;
+    text-align: left;
+  }
+
+  .abt-team__grid {
+    max-width: 24rem;
+    margin-inline: auto;
+  }
+
+  .abt-member:nth-child(2) .abt-member__frame {
+    transform: rotate(0.6deg);
+  }
+
+  .abt-closing__actions {
+    flex-direction: column;
+  }
+
+  .abt-closing__actions > * {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .abt-work__card,
+  .abt-work__more svg {
+    transition: none;
+  }
+}

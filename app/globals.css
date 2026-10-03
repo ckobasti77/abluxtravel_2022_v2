@@ -1,0 +1,29 @@
+/*
+ * ABLux global styles. Order matters:
+ *   tokens     design tokens (Papir / Tinta) + Tailwind @theme
+ *   base       element defaults (@layer base)
+ *   components components/ui library (@layer components)
+ *   chrome     navigation, footer, quick actions (unlayered, rebuilt in step 05)
+ *   catalog    /ponude, /ponude/[slug], inquiry form (unlayered, step 10)
+ *   legacy     pre-2.0 page styles (unlayered, removed as pages are rebuilt)
+ *   admin      admin "operate" mode shell and screens (.adm-*, step 13)
+ *   home       approved homepage (.ablux-home, unlayered)
+ *   pages      public pages frame + page hero (.pg-*, step 12), then one file per page
+ */
+@import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/base.css";
+@import "./styles/components.css";
+@import "./styles/chrome.css";
+@import "./styles/catalog.css";
+@import "./styles/legacy.css";
+@import "./styles/admin.css";
+@import "./styles/home.css";
+@import "./styles/pages.css";
+@import "./styles/pages/religious.css";
+@import "./styles/pages/programs.css";
+@import "./styles/pages/destinations.css";
+@import "./styles/pages/vehicles.css";
+@import "./styles/pages/about.css";
+@import "./styles/pages/contact.css";
+@import "./styles/pages/auth.css";

@@ -1,0 +1,416 @@
+/* Step 12: contact page (see app/styles/pages.css for the shared frame). */
+
+/* ───────────────────────── Details: business card + paper map ───────────────────────── */
+
+.ctc-details__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: stretch;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  margin-top: 2rem;
+}
+
+.ctc-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 1.5rem;
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background:
+    repeating-linear-gradient(0deg, transparent 0 2.2rem, rgba(6, 21, 26, 0.035) 2.2rem calc(2.2rem + 1px)),
+    var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  box-shadow: var(--ablux-shadow-card);
+}
+
+
+.ctc-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px dashed rgba(6, 21, 26, 0.22);
+}
+
+.ctc-card__name {
+  margin: 0;
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.ctc-card__sub {
+  margin: 0.25rem 0 0;
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ctc-card__stamp {
+  flex: none;
+}
+
+.ctc-rows {
+  display: grid;
+  gap: 1.1rem;
+  margin: 0;
+}
+
+.ctc-row {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr);
+  column-gap: 0.9rem;
+  align-items: center;
+}
+
+.ctc-row__icon {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(185, 145, 70, 0.55);
+  border-radius: 50%;
+  color: var(--ablux-c-gold-ink);
+}
+
+.ctc-row__icon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.ctc-row dt {
+  color: var(--ablux-c-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ctc-row dd {
+  margin: 0.1rem 0 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.ctc-row a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--ablux-c-ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(185, 145, 70, 0.6);
+  text-underline-offset: 0.2em;
+}
+
+.ctc-row a:hover {
+  text-decoration-color: currentColor;
+}
+
+.ctc-pre {
+  white-space: pre-line;
+}
+
+.ctc-hours {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(14, 124, 123, 0.28);
+  border-radius: var(--ablux-radius-card);
+  background: rgba(14, 124, 123, 0.06);
+}
+
+.ctc-hours__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ctc-hours__title svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.ctc-hours ul {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.0625rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.ctc-pending h3 {
+  margin: 0;
+  font-family: var(--ablux-editorial);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.15;
+  padding-block: 0.06em;
+}
+
+.ctc-pending p {
+  max-width: 34rem;
+  margin: 0.6rem 0 0;
+  color: var(--ablux-c-muted-strong);
+  line-height: 1.6;
+}
+
+.ctc-pending__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  margin-top: 0.5rem;
+  color: var(--ablux-c-ink);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgba(185, 145, 70, 0.7);
+  text-underline-offset: 0.22em;
+}
+
+.ctc-pending__link svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Paper map: the embed sits in a deckled sheet with a brick pin. */
+.ctc-map {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-2);
+  color: var(--ablux-c-ink);
+  box-shadow: var(--ablux-shadow-card);
+  transform: rotate(0.6deg);
+}
+
+.ctc-map__frame {
+  position: relative;
+  min-height: 20rem;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--ablux-c-paper-3);
+}
+
+.ctc-map__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: sepia(0.18) saturate(0.85);
+}
+
+.ctc-map__pin {
+  position: absolute;
+  top: -0.35rem;
+  left: 1.25rem;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50% 50% 50% 0;
+  background: var(--ablux-c-brick);
+  color: var(--ablux-c-paper-edge);
+  box-shadow: 0 8px 16px -8px rgba(6, 21, 26, 0.6);
+  transform: rotate(-45deg);
+  pointer-events: none;
+}
+
+.ctc-map__pin svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transform: rotate(45deg);
+}
+
+.ctc-map__caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding: 0 0.25rem;
+  font-size: 0.9375rem;
+}
+
+.ctc-map__caption a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  color: var(--ablux-c-ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(185, 145, 70, 0.6);
+  text-underline-offset: 0.2em;
+}
+
+.ctc-map__caption svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ctc-map--pending {
+  align-content: start;
+}
+
+.ctc-map--pending p {
+  margin: 0;
+  padding: 0.25rem 0.5rem 0.5rem;
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.ctc-map__blank {
+  position: relative;
+  min-height: 18rem;
+  overflow: hidden;
+  border: 1px dashed rgba(6, 21, 26, 0.24);
+  border-radius: 4px;
+  background:
+    repeating-linear-gradient(90deg, rgba(6, 21, 26, 0.045) 0 1px, transparent 1px 3rem),
+    repeating-linear-gradient(0deg, rgba(6, 21, 26, 0.045) 0 1px, transparent 1px 3rem),
+    var(--ablux-c-paper-light);
+}
+
+.ctc-map__route {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgba(155, 58, 46, 0.42);
+  stroke-dasharray: 6 6;
+  stroke-linecap: round;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.ctc-map__compass {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  color: rgba(185, 145, 70, 0.6);
+}
+
+.ctc-map__compass svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ctc-map__dot {
+  position: absolute;
+  top: calc(140 / 300 * 100%);
+  left: 50%;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background: var(--ablux-c-brick);
+  box-shadow: 0 0 0 4px rgba(155, 58, 46, 0.14);
+  transform: translate(-50%, -50%);
+}
+
+/* ───────────────────────── Inquiry ───────────────────────── */
+
+.ctc-inquiry {
+  scroll-margin-top: 4.5rem;
+}
+
+.ctc-inquiry__copy {
+  display: grid;
+  gap: 1.25rem;
+  align-content: start;
+}
+
+.ctc-notes {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 1rem 0 0;
+  border-top: 1px dashed var(--ablux-line-strong);
+  list-style: none;
+  color: var(--ablux-text-muted-strong);
+  line-height: 1.6;
+}
+
+.ctc-notes li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.ctc-notes li::before {
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  content: "";
+  border-radius: 50%;
+  background: var(--ablux-brick);
+}
+
+.ctc-notes a {
+  color: var(--ablux-text);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(185, 145, 70, 0.7);
+  text-underline-offset: 0.2em;
+}
+
+.ctc-inquiry__panel {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.ctc-inquiry__panel > .ui-field {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px dashed rgba(6, 21, 26, 0.2);
+}
+
+/* ───────────────────────── Responsive ───────────────────────── */
+
+@media (max-width: 1023px) {
+  .ctc-details__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ctc-map {
+    transform: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .ctc-card__head {
+    flex-direction: column-reverse;
+  }
+
+  .ctc-map__frame {
+    min-height: 16rem;
+  }
+
+  .ctc-map__blank {
+    min-height: 12rem;
+  }
+}

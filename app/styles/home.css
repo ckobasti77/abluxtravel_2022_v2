@@ -1,0 +1,1831 @@
+/*
+ * Homepage ("putni dnevnik"), scoped to .ablux-home. Style authority for the rest of the site.
+ * Step 11: theme tokens (Papir and Tinta), hero "Živa razglednica", sections from the database.
+ * Paper objects (tickets, postcards, stamps, plates, partner cells) stay paper in Tinta.
+ */
+
+.ablux-home {
+  --home-container: min(100% - 2rem, 90rem);
+  --home-section-y: clamp(4rem, 8vw, 7rem);
+  --home-chamfer: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+  position: relative;
+  overflow: clip;
+  background:
+    url("/generated/ablux-paper-route-texture.png") center top / 100% auto repeat-y,
+    var(--ablux-bg);
+  color: var(--ablux-text);
+}
+
+[data-theme="dark"] .ablux-home {
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(213, 165, 79, 0.05), transparent 55%),
+    repeating-linear-gradient(0deg, rgba(215, 226, 223, 0.025) 0 1px, transparent 1px 6rem),
+    var(--ablux-bg);
+}
+
+/* ───────────────────────── Buttons (homepage) ───────────────────────── */
+
+.ablux-btn {
+  display: inline-flex;
+  min-height: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: var(--ablux-radius-card);
+  padding: 0.9rem 1.35rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    transform 0.22s var(--ablux-ease),
+    border-color 0.22s var(--ablux-ease),
+    background 0.22s var(--ablux-ease);
+}
+
+.ablux-btn svg {
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+}
+
+.ablux-btn:hover {
+  transform: translateY(-2px);
+}
+
+.ablux-btn:active {
+  transform: translateY(1px);
+}
+
+.ablux-btn--gold {
+  border: 1px solid var(--ablux-gold-border);
+  background: var(--ablux-gold-fill);
+  color: var(--ablux-c-ink);
+  box-shadow: var(--ablux-shadow-gold);
+}
+
+.ablux-btn--ghost {
+  border: 1px solid rgba(255, 250, 240, 0.34);
+  background: rgba(5, 18, 22, 0.38);
+  color: var(--ablux-c-paper-edge);
+  backdrop-filter: blur(10px);
+  --ablux-focus: var(--ablux-c-gold-2);
+}
+
+.ablux-btn--ghost-dark {
+  border: 1px solid var(--ablux-line-strong);
+  background: color-mix(in srgb, var(--ablux-surface) 62%, transparent);
+  color: var(--ablux-text);
+}
+
+.ablux-btn--ghost-dark:hover {
+  border-color: var(--ablux-line-field);
+  background: var(--ablux-surface);
+}
+
+/* ───────────────────────── Hero "Živa razglednica" ───────────────────────── */
+
+.ablux-hero {
+  --hero-h: clamp(690px, 84svh, 805px);
+  --ablux-focus: var(--ablux-c-gold-2);
+  position: relative;
+  z-index: 3;
+  isolation: isolate;
+  min-height: var(--hero-h);
+  overflow: hidden;
+  background: var(--ablux-c-ink);
+  color: var(--ablux-c-paper-edge);
+}
+
+/* Desktop morph: the scene leaves the hero and lands in the next section. */
+.ablux-home[data-morph="on"] .ablux-hero {
+  overflow: visible;
+  background: transparent;
+}
+
+.ablux-home[data-morph="on"] .ablux-hero__frame {
+  box-shadow: var(--ablux-shadow-card);
+}
+
+.ablux-hero__scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+}
+
+.ablux-hero__frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--ablux-c-ink);
+}
+
+.ablux-hero__layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 700ms var(--ablux-ease);
+}
+
+.ablux-hero__layer.is-previous {
+  z-index: 1;
+  opacity: 1;
+  transition: none;
+}
+
+.ablux-hero__layer.is-active {
+  z-index: 2;
+  opacity: 1;
+}
+
+.ablux-hero__layer picture,
+.ablux-hero__poster,
+.ablux-hero__video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.ablux-hero__poster--zoom {
+  animation: ablux-scene-zoom 18s var(--ablux-ease) infinite alternate;
+}
+
+.ablux-hero__video {
+  opacity: 0;
+  transition: opacity 600ms var(--ablux-ease);
+}
+
+.ablux-hero__video.is-playing {
+  opacity: 1;
+}
+
+@keyframes ablux-scene-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+/* Paper-texture crossfade between scenes. */
+.ablux-hero__grain {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: url("/generated/ablux-paper-route-texture.png") center / cover, var(--ablux-c-paper-2);
+  opacity: 0;
+  animation: ablux-grain 900ms var(--ablux-ease) forwards;
+}
+
+@keyframes ablux-grain {
+  0% {
+    opacity: 0;
+  }
+  38% {
+    opacity: 0.42;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Deckled postcard border and stamp, shown as the scene becomes a postcard (scaled back by --postcard-scale). */
+.ablux-hero__deckle {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  padding: calc(12px / var(--postcard-scale, 0.4));
+  background: var(--ablux-c-paper-edge);
+  -webkit-mask:
+    var(--ui-deckle) center / 100% 100% no-repeat,
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask-composite: xor;
+  mask:
+    var(--ui-deckle) center / 100% 100% no-repeat,
+    linear-gradient(#000 0 0) content-box;
+  mask-composite: exclude;
+}
+
+.ablux-hero__postmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 6rem;
+  height: 7rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(calc(1 / var(--postcard-scale, 1)));
+  transform-origin: top right;
+}
+
+.ablux-hero__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(6, 21, 26, 0.94) 0%, rgba(6, 21, 26, 0.82) 32%, rgba(6, 21, 26, 0.5) 46%, rgba(6, 21, 26, 0) 62%),
+    linear-gradient(180deg, rgba(2, 10, 12, 0.42) 0%, rgba(2, 10, 12, 0) 22%, rgba(2, 10, 12, 0) 62%, rgba(2, 10, 12, 0.5) 100%);
+}
+
+.ablux-hero__map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--ablux-c-paper-edge);
+  stroke-width: 1;
+  opacity: 0.1;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 34%, transparent 56%);
+  mask-image: linear-gradient(90deg, #000 0%, #000 34%, transparent 56%);
+}
+
+.ablux-hero__paper-band {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: clamp(9.5rem, 17vh, 11rem);
+  background:
+    linear-gradient(180deg, rgba(255, 252, 245, 0.98), rgba(241, 232, 215, 0.96)),
+    url("/generated/ablux-paper-route-texture.png") center top / cover;
+  box-shadow: 0 -18px 42px rgba(2, 10, 12, 0.28);
+}
+
+[data-theme="dark"] .ablux-hero__paper-band {
+  background:
+    linear-gradient(180deg, rgba(10, 36, 40, 0.97), rgba(6, 21, 26, 0.99)),
+    var(--ablux-c-ink-2);
+  box-shadow: 0 -18px 42px rgba(0, 0, 0, 0.45);
+}
+
+.ablux-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: var(--hero-h);
+  width: min(100%, 96rem);
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(5.9rem, 11vh, 7.8rem) clamp(1.25rem, 5vw, 5.4rem) clamp(0.9rem, 1.5vh, 1.2rem);
+}
+
+.ablux-hero__copy {
+  max-width: 50rem;
+  margin-bottom: auto;
+  padding-top: clamp(0.5rem, 3vh, 2.5rem);
+}
+
+.ablux-hero__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0 0 1rem;
+  color: var(--ablux-c-gold-2);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Rubber stamp "AB · od 2022." that presses in on load. */
+.ablux-hero__stamp {
+  display: inline-grid;
+  place-items: center;
+  width: 3.5rem;
+  aspect-ratio: 1;
+  border: 2px solid rgba(213, 165, 79, 0.78);
+  flex: none;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px rgba(6, 21, 26, 0.6), inset 0 0 0 4px rgba(213, 165, 79, 0.42);
+  line-height: 1;
+  text-align: center;
+  transform: rotate(-8deg);
+}
+
+.ablux-hero__stamp b {
+  display: block;
+  font-family: var(--ablux-editorial);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.ablux-hero__stamp span {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.ablux-hero__kicker-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.82rem;
+}
+
+.ablux-hero__kicker-line {
+  width: 3.2rem;
+  height: 1px;
+  background: rgba(213, 165, 79, 0.52);
+}
+
+.ablux-hero__copy h1 {
+  margin: 0;
+  color: var(--ablux-c-paper-edge);
+  font-family: var(--ablux-editorial);
+  font-size: clamp(3.45rem, 5.55vw, 6rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.1;
+  padding-block: 0.12em;
+  text-wrap: balance;
+}
+
+.ablux-hero__line {
+  display: block;
+}
+
+.ablux-hero__copy h1 em {
+  color: var(--ablux-c-gold-2);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.ablux-hero__lead {
+  max-width: 34rem;
+  text-shadow: 0 1px 14px rgba(2, 10, 12, 0.55);
+  margin: 1.1rem 0 0;
+  color: rgba(255, 250, 240, 0.88);
+  font-size: clamp(1.0625rem, 1.7vw, 1.45rem);
+  line-height: 1.55;
+}
+
+.ablux-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.ablux-hero__dock {
+  position: relative;
+  width: min(100%, 86rem);
+  margin-inline: auto;
+}
+
+/* Scene caption over the photo, right above the tickets: link to the channel's offers and the pause control. */
+.ablux-hero__caption {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 0.6rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.ablux-hero__caption-link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0 0.25rem;
+  color: var(--ablux-c-paper-edge);
+  font-family: var(--ablux-editorial);
+  font-size: 1.15rem;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: rgba(213, 165, 79, 0.6);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  text-shadow: 0 1px 12px rgba(2, 10, 12, 0.7);
+}
+
+.ablux-hero__caption-link svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ablux-hero__pause {
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid rgba(255, 250, 240, 0.34);
+  border-radius: 50%;
+  background: rgba(5, 18, 22, 0.5);
+  color: var(--ablux-c-paper-edge);
+  cursor: pointer;
+  transition: background var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+.ablux-hero__pause:hover {
+  background: rgba(5, 18, 22, 0.75);
+}
+
+.ablux-hero__pause svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Ticket ribbon: three channels. */
+.ablux-hero__route-ribbon {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 86rem);
+  margin-inline: auto;
+  border: 1px solid rgba(6, 21, 26, 0.18);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.14)),
+    url("/generated/ablux-paper-route-texture.png") center / cover,
+    var(--ablux-c-paper);
+  box-shadow: 0 24px 60px -42px rgba(2, 10, 12, 0.72);
+  color: var(--ablux-c-ink);
+  --ablux-focus: var(--ablux-c-gold-ink);
+}
+
+.ablux-route-ticket {
+  position: relative;
+  display: grid;
+  min-height: 6.05rem;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: clamp(0.72rem, 1.25vw, 1.12rem);
+  border: 0;
+  background: transparent;
+  color: var(--ablux-c-ink);
+  padding: 0.72rem clamp(0.85rem, 1.5vw, 1.35rem) 0.95rem;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+.ablux-route-ticket:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.ablux-route-ticket.is-active {
+  background: rgba(255, 252, 245, 0.78);
+}
+
+.ablux-route-ticket:focus-visible {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: -4px;
+}
+
+/* Punch hole between tickets. */
+.ablux-route-ticket::after {
+  position: absolute;
+  top: 50%;
+  right: -0.35rem;
+  z-index: 2;
+  width: 0.7rem;
+  aspect-ratio: 1;
+  content: "";
+  border-radius: 50%;
+  background: rgba(6, 21, 26, 0.62);
+  transform: translateY(-50%);
+}
+
+.ablux-route-ticket:last-child::after {
+  display: none;
+}
+
+.ablux-route-ticket + .ablux-route-ticket {
+  border-left: 1px dashed rgba(6, 21, 26, 0.34);
+}
+
+.ablux-route-ticket__icon {
+  --tone: var(--ablux-c-teal);
+  position: relative;
+  display: grid;
+  width: clamp(3.6rem, 4.35vw, 4.35rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 2px solid var(--tone);
+  border-radius: 999px;
+  color: var(--tone);
+}
+
+.ablux-route-ticket__icon::before {
+  position: absolute;
+  inset: 0.38rem;
+  content: "";
+  border: 1px solid currentColor;
+  border-radius: inherit;
+  opacity: 0.28;
+}
+
+.ablux-route-ticket__icon svg {
+  width: 58%;
+  height: 58%;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3.6;
+}
+
+.ablux-route-ticket--brick .ablux-route-ticket__icon {
+  --tone: var(--ablux-c-brick);
+}
+
+.ablux-route-ticket--teal-deep .ablux-route-ticket__icon {
+  --tone: var(--ablux-c-teal-deep);
+}
+
+.ablux-route-ticket__body {
+  display: grid;
+  min-width: 0;
+  gap: 0.2rem;
+}
+
+.ablux-route-ticket__index {
+  color: var(--ablux-c-brick);
+  font-family: var(--ablux-editorial);
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.ablux-route-ticket strong {
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.55rem, 2.25vw, 2.22rem);
+  font-weight: 500;
+  line-height: 1.1;
+  padding-block: 0.08em;
+}
+
+.ablux-route-ticket__meta {
+  color: var(--ablux-c-muted-strong);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.ablux-route-ticket__stamp {
+  display: grid;
+  min-width: 6.6rem;
+  justify-items: center;
+  border: 1px solid rgba(6, 21, 26, 0.26);
+  border-radius: var(--ablux-radius-stamp);
+  color: rgba(6, 21, 26, 0.62);
+  padding: 0.38rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+  transition: transform var(--ablux-dur-state) var(--ablux-ease);
+}
+
+.ablux-route-ticket:hover .ablux-route-ticket__stamp {
+  transform: rotate(-1deg);
+}
+
+.ablux-route-ticket__stamp small,
+.ablux-route-ticket__stamp strong,
+.ablux-route-ticket__stamp em {
+  display: block;
+  font: inherit;
+}
+
+.ablux-route-ticket__stamp strong {
+  color: rgba(6, 21, 26, 0.78);
+  letter-spacing: 0.12em;
+  padding: 0;
+}
+
+.ablux-route-ticket__stamp em {
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+/* Perforation along the bottom edge; on the active ticket it tears as the timer. */
+.ablux-route-ticket__perf {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.4rem;
+  left: 1rem;
+  height: 2px;
+  border-top: 1px dashed rgba(6, 21, 26, 0.24);
+}
+
+.ablux-route-ticket__tear {
+  position: absolute;
+  inset: -1px 0 auto;
+  height: 2px;
+  background: var(--ablux-c-brick);
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation-name: ablux-ticket-tear;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.ablux-route-ticket--teal .ablux-route-ticket__tear {
+  background: var(--ablux-c-teal);
+}
+
+.ablux-route-ticket--teal-deep .ablux-route-ticket__tear {
+  background: var(--ablux-c-teal-deep);
+}
+
+@keyframes ablux-ticket-tear {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Booking bar = the search (components/search/trip-search.tsx, variant "bar"). */
+.ablux-booking {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 80rem);
+  margin: 0.62rem auto 0;
+}
+
+/* ───────────────────────── Sections: shared ───────────────────────── */
+
+.ablux-upcoming,
+.ablux-routes,
+.ablux-religious,
+.ablux-partners,
+.ablux-proof,
+.ablux-process,
+.ablux-vehicle,
+.ablux-closing,
+.ablux-admin-dock {
+  position: relative;
+  width: var(--home-container);
+  margin-inline: auto;
+}
+
+.ablux-home .ui-section-heading__title {
+  line-height: 1.1;
+  padding-block: 0.08em;
+}
+
+/* ───────────────────────── Uskoro polaze + landing postcard ───────────────────────── */
+
+.ablux-upcoming {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.55fr);
+  align-items: start;
+  gap: clamp(2rem, 4.5vw, 4.5rem);
+  padding-top: clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.ablux-landing {
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+.ablux-landing__slot {
+  position: relative;
+  aspect-ratio: var(--hero-aspect, 16 / 9);
+}
+
+.ablux-landing__card {
+  position: absolute;
+  inset: 0;
+  filter: var(--ablux-postcard-shadow);
+  transform: rotate(2deg);
+  transition: opacity 0.2s linear;
+}
+
+.ablux-home[data-morph="on"] .ablux-landing__card {
+  opacity: 0;
+}
+
+.ablux-landing__deckle {
+  position: absolute;
+  inset: 0;
+  padding: 12px;
+  background: var(--ablux-c-paper-edge);
+  -webkit-mask: var(--ui-deckle) center / 100% 100% no-repeat;
+  mask: var(--ui-deckle) center / 100% 100% no-repeat;
+}
+
+.ablux-landing__deckle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--ablux-c-paper-2);
+}
+
+.ablux-landing__caption {
+  display: grid;
+  justify-items: start;
+  gap: 0.35rem;
+  margin: 1.6rem 0 0 0.4rem;
+}
+
+.ablux-landing__caption em {
+  color: var(--ablux-text-muted);
+  font-family: var(--ablux-editorial);
+  font-size: 1.2rem;
+}
+
+.ablux-landing__caption a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ablux-accent-text);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+
+.ablux-landing__caption svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ablux-upcoming__items {
+  display: grid;
+  gap: 1.1rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ablux-upcoming__item {
+  min-width: 0;
+}
+
+.ablux-upcoming__empty {
+  margin-top: 2rem;
+  border: 1px dashed var(--ablux-line-strong);
+  border-radius: var(--ablux-radius-card);
+  padding: 1.5rem;
+}
+
+.ablux-upcoming__empty p {
+  max-width: 40rem;
+  margin: 0;
+  color: var(--ablux-text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ablux-upcoming__empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* ───────────────────────── Najtraženije rute ───────────────────────── */
+
+.ablux-routes {
+  padding: var(--home-section-y) 0 0;
+}
+
+.ablux-route-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) repeat(2, minmax(0, 0.85fr));
+  grid-auto-rows: minmax(15rem, 20vw);
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+
+.ablux-route-grid__route.ui-route {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  height: 100% !important;
+  pointer-events: none;
+}
+
+.ablux-route-card {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 18rem;
+  overflow: hidden;
+  background: var(--ablux-c-ink);
+  color: var(--ablux-c-paper-edge);
+  text-decoration: none;
+  clip-path: var(--home-chamfer);
+  --ablux-focus: var(--ablux-c-gold-2);
+}
+
+.ablux-route-card--feature {
+  grid-row: span 2;
+}
+
+.ablux-route-card:focus-visible {
+  outline: 2px solid var(--ablux-focus);
+  outline-offset: -5px;
+}
+
+.ablux-route-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ablux-ease);
+}
+
+.ablux-route-card:hover .ablux-route-card__image {
+  transform: scale(1.055);
+}
+
+.ablux-route-card::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(6, 21, 26, 0.05) 30%, rgba(6, 21, 26, 0.86)),
+    linear-gradient(90deg, rgba(6, 21, 26, 0.5), rgba(6, 21, 26, 0.04) 70%);
+}
+
+.ablux-route-card__plate {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+.ablux-route-card__content {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.15rem;
+  left: 1.2rem;
+  z-index: 2;
+  display: grid;
+  justify-items: start;
+  gap: 0.4rem;
+}
+
+.ablux-route-card__content strong {
+  font-family: var(--ablux-editorial);
+  font-size: clamp(1.7rem, 2.6vw, 2.7rem);
+  font-weight: 400;
+  line-height: 1.1;
+  padding-block: 0.12em 0.04em;
+}
+
+.ablux-route-card--feature .ablux-route-card__content strong {
+  font-size: clamp(2.4rem, 4.4vw, 4.4rem);
+}
+
+.ablux-route-card__content small {
+  color: var(--ablux-c-gold-2);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ablux-route-card__body {
+  max-width: 26rem;
+  margin-top: 0.5rem;
+  color: rgba(255, 250, 240, 0.86);
+  font-family: var(--ablux-editorial);
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+/* Paper tag (luggage label) at the bottom of each route. */
+.ablux-route-card__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+  border: 1px solid rgba(6, 21, 26, 0.22);
+  border-radius: 3px;
+  background: var(--ablux-c-paper-2);
+  color: var(--ablux-c-ink);
+  padding: 0.55rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  box-shadow: 0 10px 18px -12px rgba(0, 0, 0, 0.7);
+  transform: rotate(-1.5deg);
+}
+
+.ablux-route-card__tag svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex: none;
+  padding-left: 0.7rem;
+  border-left: 1px dashed rgba(6, 21, 26, 0.3);
+  box-sizing: content-box;
+  color: var(--ablux-c-brick);
+}
+
+.ablux-route-card--teal .ablux-route-card__tag svg {
+  color: var(--ablux-c-teal);
+}
+
+.ablux-route-card--teal-deep .ablux-route-card__tag svg {
+  color: var(--ablux-c-teal-deep);
+}
+
+.ablux-route-card--gold .ablux-route-card__tag svg {
+  color: var(--ablux-c-gold-ink);
+}
+
+/* ───────────────────────── Verski turizam ───────────────────────── */
+
+.ablux-religious {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 6rem);
+  padding: var(--home-section-y) 0 0;
+}
+
+.ablux-religious__card {
+  justify-self: center;
+  width: min(100%, 25rem);
+}
+
+.ablux-religious__points {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ablux-religious__points li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ablux-religious__points svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: none;
+  color: var(--ablux-brick);
+}
+
+.ablux-religious__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-top: 2rem;
+}
+
+/* ───────────────────────── 17 agencija, jedan potpis ───────────────────────── */
+
+.ablux-partners {
+  padding: var(--home-section-y) 0 0;
+}
+
+.ablux-partners__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+  gap: 0.9rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ablux-partners__item {
+  min-width: 0;
+}
+
+.ablux-partners__cell {
+  display: grid;
+  height: 100%;
+  min-height: 9rem;
+  grid-template-rows: 3.25rem auto 1fr;
+  gap: 0.45rem;
+  border: 1px solid var(--ablux-line-soft);
+  border-radius: var(--ablux-radius-card);
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  padding: 1rem 1rem 0.85rem;
+  text-decoration: none;
+  box-shadow: var(--ablux-shadow-low);
+  transition:
+    transform var(--ablux-dur-micro) var(--ablux-ease),
+    box-shadow var(--ablux-dur-micro) var(--ablux-ease);
+}
+
+a.ablux-partners__cell:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ablux-shadow-medium);
+}
+
+.ablux-partners__cell--waiting {
+  border-style: dashed;
+  border-color: rgba(6, 21, 26, 0.28);
+  background: var(--ablux-c-paper-2);
+}
+
+.ablux-partners__logo {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.ablux-partners__logo img {
+  max-width: 100%;
+  max-height: 2.75rem;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.ablux-partners__cell--waiting .ablux-partners__logo img {
+  opacity: 0.72;
+}
+
+.ablux-partners__logo svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--ablux-c-teal-deep);
+}
+
+.ablux-partners__name {
+  font-size: 0.9375rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.ablux-partners__count {
+  display: inline-flex;
+  align-self: end;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.875rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.ablux-partners__count svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.ablux-partners__count--waiting {
+  color: var(--ablux-c-muted-strong);
+  font-weight: 700;
+}
+
+.ablux-partners__empty {
+  margin: 1.5rem 0 0;
+  color: var(--ablux-text-muted);
+}
+
+/* ───────────────────────── Zašto ABLux ───────────────────────── */
+
+.ablux-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: var(--home-section-y) 0 0;
+}
+
+.ablux-proof__document {
+  position: relative;
+  min-height: 15rem;
+  margin-top: clamp(1.4rem, 3vw, 2.5rem);
+  border: 1px solid rgba(6, 21, 26, 0.14);
+  border-radius: var(--ablux-radius-card);
+  background:
+    url("/generated/ablux-paper-route-texture.png") center / cover,
+    var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  filter: var(--ablux-object-shadow);
+  transform: rotate(-2deg);
+}
+
+.ablux-proof__document-title {
+  position: absolute;
+  top: 1.15rem;
+  left: 1.3rem;
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.ablux-proof__route.ui-route {
+  position: absolute;
+  inset: 3rem 1rem 2rem;
+  height: auto !important;
+}
+
+.ablux-proof__compass {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  width: 3.6rem;
+  color: rgba(134, 101, 42, 0.7);
+}
+
+.ablux-proof__compass svg {
+  width: 100%;
+  height: auto;
+}
+
+.ablux-proof__stamp {
+  position: absolute;
+  right: 1.4rem;
+  bottom: 1rem;
+  transform: rotate(-12deg);
+}
+
+.ablux-proof__board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid var(--ablux-line);
+  border-radius: var(--ablux-radius-card);
+  background: color-mix(in srgb, var(--ablux-surface) 70%, transparent);
+}
+
+.ablux-proof-card {
+  padding: clamp(1.25rem, 2.6vw, 2.2rem);
+}
+
+.ablux-proof-card:nth-child(odd) {
+  border-right: 1px solid var(--ablux-line);
+}
+
+.ablux-proof-card:nth-child(-n + 2) {
+  border-bottom: 1px solid var(--ablux-line);
+}
+
+.ablux-proof-card__icon {
+  display: grid;
+  width: 3rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1.5px solid var(--ablux-teal);
+  border-radius: 50%;
+  color: var(--ablux-teal);
+}
+
+.ablux-proof-card__icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.ablux-proof-card h3,
+.ablux-process-step h3 {
+  margin: 1rem 0 0;
+  color: var(--ablux-text);
+  font-family: var(--ablux-editorial);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.ablux-proof-card h3::after {
+  display: block;
+  width: 2rem;
+  height: 1px;
+  margin-top: 0.7rem;
+  content: "";
+  background: var(--ablux-accent);
+}
+
+.ablux-proof-card p,
+.ablux-process-step p {
+  margin: 0.75rem 0 0;
+  color: var(--ablux-text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.ablux-proof__board-compass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 2.8rem;
+  aspect-ratio: 1;
+  place-items: center;
+  background: var(--ablux-bg);
+  color: var(--ablux-accent-text);
+  transform: translate(-50%, -50%);
+}
+
+.ablux-proof__board-compass svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+/* ───────────────────────── Proces ───────────────────────── */
+
+.ablux-process {
+  padding: var(--home-section-y) 0 0;
+}
+
+.ablux-process__rail {
+  margin-top: 1.5rem;
+}
+
+.ablux-process__route.ui-route {
+  color: var(--ablux-brick);
+}
+
+.ablux-process__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: -0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ablux-process-step {
+  display: grid;
+  justify-items: center;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.ablux-process-step__icon {
+  display: grid;
+  width: 3rem;
+  aspect-ratio: 1;
+  place-items: center;
+  margin-top: 1rem;
+  color: var(--ablux-teal);
+}
+
+.ablux-process-step__icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.ablux-process-step h3 {
+  margin-top: 0.5rem;
+}
+
+.ablux-process-step p {
+  max-width: 20rem;
+}
+
+/* ───────────────────────── Rent a bus ───────────────────────── */
+
+.ablux-vehicle {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  margin-top: var(--home-section-y);
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  border: 1px solid rgba(215, 226, 223, 0.18);
+  border-radius: var(--ablux-radius-card);
+  background:
+    linear-gradient(135deg, rgba(255, 250, 240, 0.04), transparent 34%),
+    var(--ablux-inverse);
+  color: var(--ablux-c-paper-edge);
+  box-shadow: var(--ablux-shadow-panel);
+  --ablux-focus: var(--ablux-c-gold-2);
+}
+
+.ablux-vehicle__copy {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 32rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1.6rem;
+  overflow: hidden;
+  border-radius: calc(var(--ablux-radius-card) - 2px);
+  padding: clamp(1.2rem, 3vw, 2.5rem);
+}
+
+.ablux-vehicle__scene {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.ablux-vehicle__scene::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(185, 145, 70, 0.08), rgba(6, 21, 26, 0.35)),
+    linear-gradient(180deg, rgba(6, 21, 26, 0.15) 0%, rgba(6, 21, 26, 0.55) 40%, rgba(6, 21, 26, 0.94) 72%);
+}
+
+.ablux-vehicle__copy .ablux-btn {
+  align-self: flex-start;
+}
+
+.ablux-vehicle__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ablux-vehicle-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--ablux-c-paper-light);
+  color: var(--ablux-c-ink);
+  text-decoration: none;
+  clip-path: var(--home-chamfer);
+  --ablux-focus: var(--ablux-c-gold-ink);
+}
+
+.ablux-vehicle-card:nth-child(2) {
+  margin-top: clamp(1.5rem, 4vw, 4rem);
+}
+
+.ablux-vehicle-card:focus-visible {
+  outline: 2px solid var(--ablux-c-gold-2);
+  outline-offset: -5px;
+}
+
+.ablux-vehicle-card__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: var(--ablux-c-ink-2);
+}
+
+.ablux-vehicle-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: ablux-photo-zoom 12s var(--ablux-ease) infinite alternate;
+}
+
+@keyframes ablux-photo-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+
+.ablux-vehicle-card__plate {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.ablux-vehicle-card__body {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.2rem 1.25rem 1.35rem;
+}
+
+.ablux-vehicle-card__body small {
+  color: var(--ablux-c-teal-ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.ablux-vehicle-card__title {
+  font-family: var(--ablux-editorial);
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.12;
+  padding-block: 0.08em;
+}
+
+.ablux-vehicle-card__text {
+  color: var(--ablux-c-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ablux-vehicle-card__driver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(6, 21, 26, 0.24);
+  color: var(--ablux-c-gold-ink);
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.ablux-vehicle-card__driver svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* Rent-a-bus scene (manifest "rentabus"): real photo, code-only motion. */
+.ablux-scene-media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.ablux-scene-media__poster,
+.ablux-scene-media__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ablux-scene-media__poster--zoom {
+  animation: ablux-photo-zoom 12s var(--ablux-ease) infinite alternate;
+}
+
+.ablux-scene-media__video {
+  opacity: 0;
+  transition: opacity 600ms var(--ablux-ease);
+}
+
+.ablux-scene-media__video.is-playing {
+  opacity: 1;
+}
+
+/* ───────────────────────── Završni poziv ───────────────────────── */
+
+.ablux-closing {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  margin-top: var(--home-section-y);
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+  padding: clamp(1.6rem, 3.5vw, 3rem) clamp(1.4rem, 4vw, 3.5rem) 0;
+  border: 1px solid var(--ablux-line);
+  border-radius: var(--ablux-radius-card);
+  background: color-mix(in srgb, var(--ablux-surface) 82%, transparent);
+}
+
+.ablux-closing__compass {
+  width: clamp(5rem, 9vw, 8rem);
+  color: var(--ablux-accent-text);
+  opacity: 0.75;
+}
+
+.ablux-closing__compass svg {
+  width: 100%;
+  height: auto;
+}
+
+.ablux-closing__place {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--ablux-teal-text);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.ablux-closing__place svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ablux-closing h2 {
+  max-width: 30ch;
+  margin: 0.8rem 0 0;
+  color: var(--ablux-text);
+  font-family: var(--ablux-editorial);
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  padding-block: 0.08em;
+  text-wrap: balance;
+}
+
+.ablux-closing__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.ablux-closing__route.ui-route {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+}
+
+.ablux-closing__stamp {
+  position: absolute;
+  top: clamp(1rem, 3vw, 2.5rem);
+  right: clamp(1rem, 3vw, 2.5rem);
+  transform: rotate(-10deg);
+}
+
+.ablux-admin-dock {
+  padding-bottom: 3rem;
+}
+
+/* ───────────────────────── Responsive ───────────────────────── */
+
+@media (max-width: 1120px) {
+  .ablux-route-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ablux-route-grid__route.ui-route {
+    display: none;
+  }
+
+  .ablux-upcoming,
+  .ablux-religious,
+  .ablux-proof,
+  .ablux-vehicle {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ablux-landing {
+    width: min(100%, 34rem);
+  }
+
+  .ablux-vehicle__copy {
+    min-height: 24rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ablux-hero__route-ribbon {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .ablux-hero__route-ribbon::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ablux-route-ticket {
+    flex: 0 0 min(86%, 24rem);
+    scroll-snap-align: start;
+  }
+
+  .ablux-route-ticket__stamp {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* 9:16 composition: copy on ink at the top, the scene below it, tickets over its foot. */
+  .ablux-hero {
+    --hero-h: 100svh;
+    min-height: auto;
+  }
+
+  .ablux-hero__scene {
+    inset: 40svh 0 auto;
+    height: 60svh;
+  }
+
+  .ablux-hero__poster {
+    object-position: 50% 18%;
+  }
+
+  .ablux-hero__shade {
+    inset: 0 0 auto;
+    height: 100svh;
+    background:
+      linear-gradient(180deg, rgba(6, 21, 26, 1) 0%, rgba(6, 21, 26, 0.96) 40svh, rgba(6, 21, 26, 0.35) 52svh, rgba(6, 21, 26, 0) 64svh, rgba(6, 21, 26, 0) 74svh, rgba(6, 21, 26, 0.72) 100svh);
+  }
+
+  .ablux-hero__map {
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, transparent 48%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 30%, transparent 48%);
+  }
+
+  .ablux-hero__paper-band {
+    top: calc(100svh - 3.75rem);
+    height: auto;
+  }
+
+  .ablux-hero__inner {
+    min-height: auto;
+    justify-content: flex-start;
+    padding: 5.25rem 1rem 1rem;
+  }
+
+  /* The copy block fills the first screen down to the caption and tickets; the scene shows in its lower part. */
+  .ablux-hero__copy {
+    min-height: calc(100svh - 15.75rem);
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .ablux-hero__kicker {
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  .ablux-hero__stamp {
+    width: 3.4rem;
+  }
+
+  .ablux-hero__stamp b {
+    font-size: 1.1rem;
+  }
+
+  .ablux-hero__kicker-line {
+    width: 1.6rem;
+  }
+
+  .ablux-hero__copy h1 {
+    font-size: clamp(2.6rem, 11.5vw, 3.6rem);
+  }
+
+  .ablux-hero__lead {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .ablux-hero__actions {
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .ablux-hero__actions .ablux-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-inline: 0.8rem;
+    font-size: 0.875rem;
+  }
+
+  .ablux-hero__caption {
+    position: static;
+    margin: 0 0 0.6rem;
+  }
+
+  .ablux-route-ticket {
+    flex-basis: 84%;
+    min-height: 6.6rem;
+    padding: 0.85rem 0.9rem 1rem;
+  }
+
+  .ablux-route-ticket__icon {
+    width: 3.2rem;
+  }
+
+  .ablux-route-ticket strong {
+    font-size: 1.5rem;
+  }
+
+  .ablux-booking {
+    margin-top: 1rem;
+  }
+
+  .ablux-upcoming {
+    padding-top: 3rem;
+  }
+
+  .ablux-landing {
+    width: calc(100% - 0.75rem);
+  }
+
+  .ablux-route-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.9rem;
+  }
+
+  .ablux-route-card,
+  .ablux-route-card--feature {
+    min-height: 21rem;
+    grid-row: auto;
+  }
+
+  .ablux-route-card--feature {
+    min-height: 26rem;
+  }
+
+  .ablux-proof__board {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ablux-proof-card:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .ablux-proof-card:not(:last-of-type) {
+    border-bottom: 1px solid var(--ablux-line);
+  }
+
+  .ablux-proof__board-compass {
+    display: none;
+  }
+
+  .ablux-process__route.ui-route {
+    display: none;
+  }
+
+  .ablux-process__steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+    border-left: 2px dashed rgba(155, 58, 46, 0.36);
+    padding-left: 1.25rem;
+  }
+
+  .ablux-process-step {
+    justify-items: start;
+    padding: 0;
+    text-align: left;
+  }
+
+  .ablux-vehicle {
+    width: 100%;
+    border-radius: 0;
+    border-inline: 0;
+  }
+
+  .ablux-vehicle__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ablux-vehicle-card:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .ablux-closing {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ablux-closing__compass {
+    display: none;
+  }
+
+  .ablux-closing__actions {
+    flex-direction: column;
+  }
+
+  .ablux-closing__actions .ablux-btn {
+    width: 100%;
+  }
+
+  .ablux-closing__stamp {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ablux-hero__poster--zoom,
+  .ablux-scene-media__poster--zoom,
+  .ablux-vehicle-card__image,
+  .ablux-hero__grain {
+    animation: none !important;
+  }
+
+  .ablux-hero__layer,
+  .ablux-route-card__image,
+  .ablux-btn,
+  .ablux-route-ticket__stamp {
+    transition: none !important;
+  }
+}

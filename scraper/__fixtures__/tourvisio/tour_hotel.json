@@ -1,0 +1,163 @@
+{
+  "stars": 4.0,
+  "location": {
+    "name": "MALAGA",
+    "latitude": "36.524807000",
+    "longitude": "-5.039054000",
+    "countryId": "74",
+    "provider": 1,
+    "isTopRegion": false,
+    "ownLocation": false,
+    "id": "115"
+  },
+  "city": {
+    "name": "MALAGA",
+    "latitude": "36.524807000",
+    "longitude": "-5.039054000",
+    "provider": 1,
+    "isTopRegion": false,
+    "ownLocation": false,
+    "id": "115"
+  },
+  "offers": [
+    {
+      "night": 6,
+      "isAvailable": true,
+      "availability": 3,
+      "rooms": [
+        {
+          "roomId": "STD",
+          "roomName": "STANDARD",
+          "roomGroups": [],
+          "accomId": "DBL",
+          "accomName": "DOUBLE ROOM",
+          "boardId": "BB",
+          "boardName": "BED & BREAKFAST",
+          "boardGroups": [
+            {
+              "id": "BBGR",
+              "name": "NOĆENJE SA DORUČKOM"
+            }
+          ],
+          "allotment": 26,
+          "stopSaleGuaranteed": 0,
+          "stopSaleStandart": 0,
+          "priceList": {
+            "id": 38202,
+            "salePeriod": {
+              "from": "2026-07-13T00:00:00",
+              "to": "2026-10-17T00:00:00"
+            }
+          },
+          "price": {
+            "oldAmount": 2980.00,
+            "percent": 0.0,
+            "amount": 2980.00,
+            "currency": "EUR"
+          },
+          "travellers": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ],
+          "transportation": {
+            "outbound": {
+              "provider": 1,
+              "productType": 3,
+              "seatInfo": {
+                "availableSeatCount": 0,
+                "availableSeatCountType": 0
+              },
+              "availableSeatCount": 0,
+              "departure": {
+                "id": "2"
+              },
+              "arrival": {
+                "id": "115"
+              },
+              "code": "BEG-AGP",
+              "flightClass": "Y"
+            },
+            "return": {
+              "provider": 1,
+              "productType": 3,
+              "seatInfo": {
+                "availableSeatCount": 0,
+                "availableSeatCountType": 0
+              },
+              "availableSeatCount": 0,
+              "departure": {
+                "id": "115"
+              },
+              "arrival": {
+                "id": "2"
+              },
+              "code": "SVQ-BEG1",
+              "flightClass": "Y"
+            }
+          },
+          "services": [
+            {
+              "name": "FLIGHT"
+            },
+            {
+              "name": "HOTEL"
+            },
+            {
+              "name": "TRANS"
+            },
+            {
+              "name": "USLUGVOD"
+            }
+          ],
+          "visiblePL": false
+        }
+      ],
+      "isRefundable": false,
+      "holidayPackage": {
+        "originalName": "ANDALUZIJSKA TURA 11.10.2026. NOVO",
+        "name": "ANDALUZIJSKA TURA 11.10.2026. NOVO",
+        "id": "17770",
+        "code": "11ANDAT26N"
+      },
+      "accomodationCheckIn": "2026-10-11T00:00:00",
+      "accomodationNight": 6,
+      "isChannelManager": false,
+      "expiresOn": "2026-09-30T14:15:16.9940089Z",
+      "offerId": "1$6$202609301415$RS$0|38202$1$1$5778556$BEG-AGP$SVQ-BEG1$0$0$2980.00$2",
+      "checkIn": "2026-10-11T00:00:00",
+      "price": {
+        "oldAmount": 2980.00,
+        "percent": 0.0,
+        "amount": 2980.00,
+        "currency": "EUR"
+      },
+      "ownOffer": true,
+      "provider": 1
+    }
+  ],
+  "address": "",
+  "boardGroups": [
+    {
+      "id": "BBGR",
+      "name": "NOĆENJE SA DORUČKOM"
+    }
+  ],
+  "hotelCategory": {
+    "name": "4",
+    "id": "5",
+    "code": "4STARS"
+  },
+  "orderNumber": 999999,
+  "originalName": "SMESTAJ TORREMOLINOS",
+  "hasChannelManagerOffer": false,
+  "code": "SMTORREMOL",
+  "provider": 1,
+  "thumbnail": "/images/product/1/147/638022064200000000/2/1/15148/smestaj_torremolinos.jpg",
+  "thumbnailFull": "https://services.bigblue.rs/media/images/product/1/147/638022064200000000/2/1/15148/smestaj_torremolinos.jpg",
+  "id": "15148",
+  "name": "SMESTAJ TORREMOLINOS"
+}

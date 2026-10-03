@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx convex:*)",
+      "Bash(npx vercel:*)",
+      "Bash(ls -la app/auth/ app/signin/ app/signup/ app/admin/aranzmani/ app/admin/putovanja/ app/admin/verski-turizam/ app/admin/podesavanja/ app/putovanja/\\\\[zemlja\\\\]/ app/aranzmani/\\\\[slug\\\\]/ 2>/dev/null)",
+      "Bash(cd C:/Users/admin/Desktop/ablux_travel_2022 && npm install zustand)",
+      "Bash(find /c/Users/admin/Desktop/ablux_travel_2022/components -name '*card*' -o -name '*item*' -o -name '*offer*' -o -name '*trip*' -o -name '*accommodation*' 2>/dev/null | head -30)",
+      "Bash(find /c/Users/admin/Desktop/ablux_travel_2022 -name \"*cart*\" -o -name \"*store*\" 2>/dev/null | grep -E \"\\\\.\\(ts|tsx\\)$\")",
+      "Bash(cd C:/Users/admin/Desktop/ablux_travel_2022 && npx tsc --noEmit 2>&1 | head -50)",
+      "Bash(cd C:/Users/admin/Desktop/ablux_travel_2022 && npx tsc --noEmit 2>&1 | head -30)",
+      "Bash(cd C:/Users/admin/Desktop/ablux_travel_2022 && npm run build 2>&1 | tail -30)",
+      "Bash(mkdir -p /c/Users/admin/Desktop/ablux_travel_2022/app/lady-gaga-studio && mkdir -p /c/Users/admin/Desktop/ablux_travel_2022/components/lady-gaga)",
+      "Bash(npx next:*)",
+      "Bash(find /c/Users/admin/Desktop/ablux_travel_2022 -name \"layout.tsx\" | xargs grep -l \"Cormorant\" 2>/dev/null)",
+      "Bash(cd \"/c/Users/admin/Desktop/ablux_travel_2022\" && npx tsc --noEmit --pretty 2>&1 | head -30)",
+      "mcp__ide__getDiagnostics",
+      "Bash(npm run:*)",
+      "WebSearch",
+      "WebFetch(domain:checkoutdocs.payoneer.com)",
+      "WebFetch(domain:developer.payoneer.com)",
+      "WebFetch(domain:www.echoapi.com)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:www.postman.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(ls -la /c/Users/admin/Desktop/Web Dev Projects/ablux_travel_2022/app/*.css)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:www.sanity.io)",
+      "Bash(npm i:*)"
+    ]
+  }
+}

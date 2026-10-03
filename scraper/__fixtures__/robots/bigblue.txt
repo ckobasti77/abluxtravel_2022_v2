@@ -1,0 +1,7 @@
+User-agent: *
+Allow:*
+Disallow: /*.asmx
+Disallow: /*.ashx
+
+
+Sitemap: http://b2c.bigblue.rs/Sitemap.xml

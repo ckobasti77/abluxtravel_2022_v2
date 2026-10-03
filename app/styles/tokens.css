@@ -1,0 +1,275 @@
+/*
+ * Design tokens: "Papir" (light, default) and "Tinta" (dark).
+ * Source of truth: DESIGN.md and docs/design/ablux-design-dna.json.
+ * The theme is set on <html data-theme="light|dark"> by the blocking script in app/layout.tsx.
+ * Any element can force a theme for its subtree with data-theme (used by /dev/ui).
+ */
+
+:root {
+  /* Fixed palette (same in both themes). Use the semantic tokens below in components. */
+  --ablux-c-paper: #f8f4ea;
+  --ablux-c-paper-light: #fdfaf3;
+  --ablux-c-paper-2: #efe8da;
+  --ablux-c-paper-3: #e2d9c6;
+  --ablux-c-paper-edge: #fffaf0;
+  --ablux-c-ink: #06151a;
+  --ablux-c-ink-2: #0a2428;
+  --ablux-c-ink-3: #10302f;
+  --ablux-c-gold: #b99146;
+  --ablux-c-gold-2: #d5a54f;
+  --ablux-c-gold-ink: #7d5e27;
+  --ablux-c-teal: #0e7c7b;
+  --ablux-c-teal-ink: #0b6968;
+  --ablux-c-teal-deep: #296266;
+  --ablux-c-brick: #9b3a2e;
+  --ablux-c-ochre: #c28a2c;
+  --ablux-c-silver: #d7e2df;
+  --ablux-c-muted: #5c6662;
+  --ablux-c-muted-strong: #4f5956;
+  --ablux-c-stone: #9a9384;
+
+  /* Type */
+  --ablux-editorial: var(--font-editorial), Georgia, "Times New Roman", serif;
+  --ablux-sans: var(--font-manrope), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Shape */
+  --ablux-radius-stamp: 6px;
+  --ablux-radius-card: 8px;
+  --ablux-radius-field: 10px;
+  --ablux-radius-sheet: 16px;
+  --ablux-radius-pill: 999px;
+
+  /* Layout */
+  --ablux-container: 90rem;
+  --ablux-gutter: clamp(1rem, 3vw, 2rem);
+  --ablux-section-y: clamp(4rem, 8vw, 7rem);
+
+  /* Motion */
+  --ablux-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ablux-dur-micro: 200ms;
+  --ablux-dur-state: 420ms;
+  --ablux-dur-reveal: 780ms;
+
+  /* Brass plate (same in both themes) */
+  --ablux-brass: linear-gradient(160deg, #e6c781 0%, #c9a157 55%, #a57e3a 100%);
+  --ablux-brass-edge: #6e5222;
+
+  /* Gold action (same in both themes; ink text on it passes at 8.25:1 / 6.37:1) */
+  --ablux-gold-fill: linear-gradient(135deg, var(--ablux-c-gold-2), var(--ablux-c-gold));
+  --ablux-gold-border: color-mix(in srgb, var(--ablux-c-gold) 72%, #fff 28%);
+  --ablux-shadow-gold: 0 18px 34px -22px rgba(185, 145, 70, 0.72);
+}
+
+/* .ui-paper: paper objects (tickets, postcards) keep Papir tokens inside, even on the Tinta desk. */
+:root,
+[data-theme="light"],
+.ui-paper {
+  color-scheme: light;
+
+  --ablux-bg: var(--ablux-c-paper);
+  --ablux-surface: var(--ablux-c-paper-light);
+  --ablux-surface-2: var(--ablux-c-paper-2);
+  --ablux-surface-3: var(--ablux-c-paper-3);
+  --ablux-inverse: var(--ablux-c-ink);
+  --ablux-on-inverse: var(--ablux-c-paper-edge);
+  --ablux-paper-object: var(--ablux-c-paper-light);
+  --ablux-paper-object-2: var(--ablux-c-paper-2);
+
+  --ablux-text: var(--ablux-c-ink);
+  --ablux-text-muted: var(--ablux-c-muted);
+  --ablux-text-muted-strong: var(--ablux-c-muted-strong);
+  --ablux-text-disabled: var(--ablux-c-muted);
+
+  --ablux-accent: var(--ablux-c-gold-2);
+  --ablux-accent-deep: var(--ablux-c-gold);
+  --ablux-accent-text: var(--ablux-c-gold-ink);
+
+  --ablux-teal: var(--ablux-c-teal);
+  --ablux-teal-text: var(--ablux-c-teal-ink);
+  --ablux-brick: var(--ablux-c-brick);
+  --ablux-ochre: var(--ablux-c-ochre);
+  --ablux-info: var(--ablux-c-teal-deep);
+  --ablux-stone: var(--ablux-c-stone);
+
+  --ablux-line-soft: rgba(6, 21, 26, 0.12);
+  --ablux-line: rgba(6, 21, 26, 0.16);
+  --ablux-line-strong: rgba(6, 21, 26, 0.34);
+  --ablux-line-field: #828887;
+
+  --ablux-focus: var(--ablux-c-gold-ink);
+  --ablux-overlay: rgba(6, 21, 26, 0.6);
+  --ablux-selection: rgba(213, 165, 79, 0.36);
+
+  --ablux-shadow-low: 0 1px 2px rgba(6, 21, 26, 0.06);
+  --ablux-shadow-medium: 0 12px 32px -12px rgba(6, 21, 26, 0.18);
+  --ablux-shadow-high: 0 28px 60px -20px rgba(6, 21, 26, 0.35);
+  --ablux-shadow-card: 0 28px 54px -44px rgba(6, 21, 26, 0.72);
+  --ablux-shadow-panel: 0 34px 80px -56px #020a0c;
+
+  /* Skeleton shimmer */
+  --ablux-skeleton: var(--ablux-c-paper-2);
+  --ablux-skeleton-shine: rgba(255, 250, 240, 0.85);
+
+  /* Strong fills: ink button, toast (ink on paper; paper on the ink desk). */
+  --ablux-strong-bg: var(--ablux-c-ink);
+  --ablux-strong-bg-hover: var(--ablux-c-ink-3);
+  --ablux-strong-fg: var(--ablux-c-paper);
+  --ablux-strong-accent: var(--ablux-c-gold-2);
+  --ablux-strong-ok: #5fb8b4;
+  --ablux-strong-error: #e08b7e;
+  /* Selected chip: ink in Papir, gold in Tinta. */
+  --ablux-selected-bg: var(--ablux-c-ink);
+  --ablux-selected-fg: var(--ablux-c-paper);
+  /* Shadows of paper objects (drop-shadow, because masks cut box-shadow). */
+  --ablux-object-shadow: drop-shadow(0 18px 22px rgba(6, 21, 26, 0.14));
+  --ablux-postcard-shadow: drop-shadow(0 12px 18px rgba(6, 21, 26, 0.2));
+
+  /* Legacy aliases (pre-2.0 pages). Remove as pages move to components/ui. */
+  --bg: var(--ablux-bg);
+  --bg-soft: var(--ablux-surface-2);
+  --text: var(--ablux-text);
+  --muted: var(--ablux-text-muted);
+  --surface: var(--ablux-surface);
+  --surface-strong: var(--ablux-surface);
+  --line: var(--ablux-line);
+  --primary: var(--ablux-accent-text);
+  --primary-strong: var(--ablux-text);
+  --primary-soft: color-mix(in srgb, var(--ablux-accent) 16%, transparent);
+  --success-soft: color-mix(in srgb, var(--ablux-teal) 14%, transparent);
+  --shadow: var(--ablux-shadow-card);
+  --accent: var(--ablux-accent);
+  --accent-strong: var(--ablux-accent-deep);
+  --accent-soft: color-mix(in srgb, var(--ablux-accent) 12%, transparent);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Tinta: an ink desk. Paper objects (tickets, postcards, stamps) stay paper. */
+  --ablux-bg: var(--ablux-c-ink);
+  --ablux-surface: var(--ablux-c-ink-2);
+  --ablux-surface-2: var(--ablux-c-ink-3);
+  --ablux-surface-3: #173a38;
+  --ablux-inverse: var(--ablux-c-ink-2);
+  --ablux-on-inverse: var(--ablux-c-paper-edge);
+  --ablux-paper-object: var(--ablux-c-paper-2);
+  --ablux-paper-object-2: var(--ablux-c-paper-3);
+
+  --ablux-text: var(--ablux-c-paper);
+  --ablux-text-muted: #b9bab4;
+  --ablux-text-muted-strong: #c9cac4;
+  --ablux-text-disabled: #8d918c;
+
+  --ablux-accent: var(--ablux-c-gold-2);
+  --ablux-accent-deep: var(--ablux-c-gold);
+  --ablux-accent-text: var(--ablux-c-gold-2);
+
+  --ablux-teal: #5fb8b4;
+  --ablux-teal-text: #5fb8b4;
+  --ablux-brick: #e08b7e;
+  --ablux-ochre: var(--ablux-c-ochre);
+  --ablux-info: #9ccfd0;
+  --ablux-stone: #7f8682;
+
+  --ablux-line-soft: rgba(215, 226, 223, 0.14);
+  --ablux-line: rgba(215, 226, 223, 0.18);
+  --ablux-line-strong: rgba(215, 226, 223, 0.28);
+  --ablux-line-field: rgba(215, 226, 223, 0.4);
+
+  --ablux-focus: var(--ablux-c-gold-2);
+  --ablux-overlay: rgba(2, 10, 12, 0.72);
+  --ablux-selection: rgba(213, 165, 79, 0.42);
+
+  --ablux-shadow-low: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --ablux-shadow-medium: 0 14px 34px -14px rgba(0, 0, 0, 0.6);
+  --ablux-shadow-high: 0 30px 70px -24px rgba(0, 0, 0, 0.75);
+  --ablux-shadow-card: 0 28px 54px -40px rgba(0, 0, 0, 0.9);
+  --ablux-shadow-panel: 0 34px 80px -56px #000;
+
+  --ablux-skeleton: var(--ablux-c-ink-3);
+  --ablux-skeleton-shine: rgba(215, 226, 223, 0.12);
+
+  --ablux-strong-bg: var(--ablux-c-paper-2);
+  --ablux-strong-bg-hover: var(--ablux-c-paper);
+  --ablux-strong-fg: var(--ablux-c-ink);
+  --ablux-strong-accent: var(--ablux-c-gold-ink);
+  --ablux-strong-ok: var(--ablux-c-teal-ink);
+  --ablux-strong-error: var(--ablux-c-brick);
+  --ablux-selected-bg: var(--ablux-c-gold-2);
+  --ablux-selected-fg: var(--ablux-c-ink);
+  --ablux-object-shadow: drop-shadow(0 18px 26px rgba(0, 0, 0, 0.5));
+  --ablux-postcard-shadow: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.55));
+}
+
+/*
+ * Tailwind v4 theme. `inline` makes utilities reference the runtime variables,
+ * so `bg-surface`, `text-fg-muted`, `border-line` follow the active theme.
+ */
+@theme inline {
+  --color-background: var(--ablux-bg);
+  --color-foreground: var(--ablux-text);
+
+  --color-canvas: var(--ablux-bg);
+  --color-surface: var(--ablux-surface);
+  --color-surface-2: var(--ablux-surface-2);
+  --color-surface-3: var(--ablux-surface-3);
+  --color-inverse: var(--ablux-inverse);
+  --color-on-inverse: var(--ablux-on-inverse);
+  --color-paper-object: var(--ablux-paper-object);
+
+  --color-fg: var(--ablux-text);
+  --color-fg-muted: var(--ablux-text-muted);
+  --color-fg-muted-strong: var(--ablux-text-muted-strong);
+
+  --color-accent: var(--ablux-accent);
+  --color-accent-deep: var(--ablux-accent-deep);
+  --color-accent-fg: var(--ablux-accent-text);
+
+  --color-route: var(--ablux-teal);
+  --color-route-fg: var(--ablux-teal-text);
+  --color-alert: var(--ablux-brick);
+  --color-warn: var(--ablux-ochre);
+  --color-info: var(--ablux-info);
+
+  --color-line: var(--ablux-line);
+  --color-line-soft: var(--ablux-line-soft);
+  --color-line-strong: var(--ablux-line-strong);
+  --color-line-field: var(--ablux-line-field);
+  --color-focus: var(--ablux-focus);
+
+  /* Fixed palette */
+  --color-ink: var(--ablux-c-ink);
+  --color-ink-2: var(--ablux-c-ink-2);
+  --color-ink-3: var(--ablux-c-ink-3);
+  --color-paper: var(--ablux-c-paper);
+  --color-paper-light: var(--ablux-c-paper-light);
+  --color-paper-2: var(--ablux-c-paper-2);
+  --color-paper-3: var(--ablux-c-paper-3);
+  --color-paper-edge: var(--ablux-c-paper-edge);
+  --color-gold: var(--ablux-c-gold);
+  --color-gold-2: var(--ablux-c-gold-2);
+  --color-gold-ink: var(--ablux-c-gold-ink);
+  --color-teal: var(--ablux-c-teal);
+  --color-teal-ink: var(--ablux-c-teal-ink);
+  --color-teal-deep: var(--ablux-c-teal-deep);
+  --color-brick: var(--ablux-c-brick);
+  --color-ochre: var(--ablux-c-ochre);
+  --color-silver: var(--ablux-c-silver);
+  --color-stone: var(--ablux-c-stone);
+
+  --font-sans: var(--ablux-sans);
+  --font-serif: var(--ablux-editorial);
+  --font-display: var(--ablux-editorial);
+
+  --radius-stamp: 6px;
+  --radius-card: 8px;
+  --radius-field: 10px;
+  --radius-sheet: 16px;
+
+  --shadow-low: var(--ablux-shadow-low);
+  --shadow-medium: var(--ablux-shadow-medium);
+  --shadow-high: var(--ablux-shadow-high);
+  --shadow-card: var(--ablux-shadow-card);
+
+  --ease-journal: var(--ablux-ease);
+}

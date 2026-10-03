@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "scenes": {
+    "hodocasca": {
+      "motion": "drone",
+      "desktop": {
+        "poster": "hodocasca-desktop.avif",
+        "mp4": "hodocasca-desktop.mp4"
+      },
+      "mobile": {
+        "poster": "hodocasca-mobile.avif",
+        "mp4": "hodocasca-mobile.mp4"
+      }
+    },
+    "ostrog": {
+      "motion": "drone",
+      "desktop": {
+        "poster": "ostrog-desktop.avif",
+        "mp4": "ostrog-desktop.mp4"
+      },
+      "mobile": {
+        "poster": "ostrog-mobile.avif",
+        "mp4": "ostrog-mobile.mp4"
+      }
+    },
+    "mediteran": {
+      "motion": "drone",
+      "desktop": {
+        "poster": "mediteran-desktop.avif",
+        "mp4": "mediteran-desktop.mp4"
+      },
+      "mobile": {
+        "poster": "mediteran-mobile.avif",
+        "mp4": "mediteran-mobile.mp4"
+      }
+    },
+    "evropa": {
+      "motion": "drone",
+      "desktop": {
+        "poster": "evropa-desktop.avif",
+        "mp4": "evropa-desktop.mp4"
+      },
+      "mobile": {
+        "poster": "evropa-mobile.avif",
+        "mp4": "evropa-mobile.mp4"
+      }
+    },
+    "rentabus": {
+      "motion": "still",
+      "desktop": {
+        "poster": "rentabus-desktop.avif"
+      }
+    }
+  }
+}
