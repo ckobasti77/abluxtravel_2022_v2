@@ -74,3 +74,4 @@ proxy.ts             Convex Auth cookies, /admin redirect (do not add middleware
 - Page styles live in `app/styles/pages*.css`, admin styles in `app/styles/admin.css`.
 - The homepage hero media are in `public/media/hero/` and described by `manifest.json`.
 - Icons: lucide-react only, `strokeWidth={1.5}`.
+# abluxtravel_2022_v2
